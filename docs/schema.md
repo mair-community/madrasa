@@ -1,8 +1,8 @@
 # Catalog schema
 
-The catalog uses two CSV files only. Source information is merged directly into each file.
+The catalog uses two json files only. Source information is merged directly into each file.
 
-## `data/programs.csv`
+## `data/programs.json`
 
 | Column | Required | Description |
 |---|---:|---|
@@ -30,7 +30,7 @@ The catalog uses two CSV files only. Source information is merged directly into 
 | `source_notes` | No | Short note about the source. |
 | `notes` | No | Short practical note about the program. |
 
-## `data/research_structures.csv`
+## `data/research_structures.json`
 
 Use this file for laboratories, Center for Doctoral Studies (CEDoc) formations, research centers, and teams that are useful for AI research discovery but are not standalone degree programs.
 

@@ -8,10 +8,17 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-      - name: Validate catalog
+          python-version: "3.11"
+
+      - name: Validate JSON catalog
         run: python scripts/validate_catalog.py
+
+      - name: Build stats
+        run: python scripts/build_stats.py

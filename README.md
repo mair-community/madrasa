@@ -33,9 +33,10 @@ A curated catalog of AI-related education and research opportunities in Morocco.
 
 | File | Description |
 |---|---|
-| `catalog/programs.csv` | Main catalog of AI education programs. Source fields are included in the same file. |
-| `catalog/research_structures.csv` | AI-related labs, centers, teams, and doctoral structures. Source fields are included in the same file. |
-| `docs/schema.md` | Column definitions and contribution rules. |
+| `catalog/programs.json` | Main catalog of AI education programs. |
+| `catalog/research_structures.json` | AI-related labs, centers, doctoral structures, and research groups. |
+| `api/stats.json` | Generated statistics for interfaces and badges. |
+| `docs/schema.md` | Field definitions and contribution rules. |
 
 ## Quick use
 
@@ -43,20 +44,15 @@ A curated catalog of AI-related education and research opportunities in Morocco.
 # Validate the catalog
 python scripts/validate_catalog.py
 
-# Show all PhD entries
-csvgrep -c level -m PhD catalog/programs.csv
+# Generate stats for badges/interfaces
+python scripts/build_stats.py
 
-# Search by city
-csvgrep -c city -m Rabat catalog/programs.csv
+# Pretty-print programs
+python -m json.tool catalog/programs.json
 
-# Search by keyword
-csvgrep -c domains -r "Bioinformatics|Agriculture|Cybersecurity" catalog/programs.csv
-```
-
-Install `csvgrep` with:
-
-```bash
-pip install csvkit
+# Search with jq
+jq '.[] | select(.level == "PhD")' catalog/programs.json
+jq '.[] | select(.city == "Rabat")' catalog/programs.json
 ```
 
 ## Status labels
@@ -64,14 +60,13 @@ pip install csvkit
 | Status | Meaning |
 |---|---|
 | `verified_official` | Verified from an official university, school, faculty, or lab page. |
-| `announced_official` | Announced by an official source, but still needs next-year confirmation. |
 | `needs_review` | Source exists, but the title, level, accreditation, or availability needs checking. |
 | `inactive_or_archived` | Kept for history, not currently open. |
 
 ## How to contribute
 
 1. Check whether the program or structure already exists.
-2. Add or update one row in the correct CSV file.
+2. Add or update one JSON entry.
 3. Use an official source whenever possible.
 4. Update `last_checked`.
 5. Run the validator.

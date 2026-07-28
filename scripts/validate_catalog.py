@@ -1,84 +1,137 @@
 #!/usr/bin/env python3
-"""Basic validator for the Moroccan AI Education Catalog."""
+"""Validate the MADRASA JSON catalog."""
 from __future__ import annotations
 
-import csv
+import json
 import re
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PROGRAMS = ROOT / "catalog" / "programs.csv"
-RESEARCH = ROOT / "catalog" / "research_structures.csv"
+
+PROGRAMS = ROOT / "catalog" / "programs.json"
+RESEARCH = ROOT / "catalog" / "research_structures.json"
 
 PROGRAM_REQUIRED = [
-    "program_id", "name", "level", "degree_type", "institution", "school_or_faculty",
-    "city", "region", "domains", "research_oriented", "status", "source_title",
-    "source_owner", "source_url", "source_type", "last_checked",
-]
-
-RESEARCH_REQUIRED = [
-    "structure_id", "name", "type", "institution", "school_or_lab", "city", "region",
-    "domains", "status", "source_title", "source_owner", "source_url", "source_type",
+    "program_id",
+    "name",
+    "level",
+    "degree_type",
+    "institution",
+    "school_or_faculty",
+    "city",
+    "region",
+    "domains",
+    "research_oriented",
+    "status",
+    "source_title",
+    "source_owner",
+    "source_url",
+    "source_type",
     "last_checked",
 ]
 
-VALID_LEVELS = {"Bachelor", "Engineer", "Master", "PhD", "Certificate", "Other"}
+RESEARCH_REQUIRED = [
+    "structure_id",
+    "name",
+    "type",
+    "institution",
+    "school_or_lab",
+    "city",
+    "region",
+    "domains",
+    "status",
+    "source_title",
+    "source_owner",
+    "source_url",
+    "source_type",
+    "last_checked",
+]
+
+VALID_LEVELS = {"Bachelor", "Engineer", "Master", "PhD", "Postdoctoral", "Certificate", "Executive", "Other"}
 VALID_RESEARCH = {"Yes", "Some", "No"}
-VALID_STATUS = {"verified_official", "announced_official", "needs_review", "inactive_or_archived"}
+VALID_STATUS = {"verified_official", "needs_review", "inactive_or_archived"}
 VALID_SOURCE_TYPES = {"official", "official_pdf", "secondary", "other"}
+
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 ID_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
 
-def read_csv(path: Path) -> list[dict[str, str]]:
-    with path.open("r", encoding="utf-8", newline="") as f:
-        return list(csv.DictReader(f))
+def read_json(path: Path) -> list[dict]:
+    with path.open("r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    if not isinstance(data, list):
+        raise ValueError(f"{path.name} must contain a JSON array")
+
+    return data
+
+
+def is_url(value: str) -> bool:
+    return value.startswith(("http://", "https://"))
 
 
 def validate_rows(path: Path, id_col: str, required: list[str], label: str) -> list[str]:
-    rows = read_csv(path)
     errors: list[str] = []
-    seen_ids: set[str] = set()
+    rows = read_json(path)
 
     if not rows:
         return [f"{path.name} is empty"]
 
-    header = rows[0].keys()
-    for col in required:
-        if col not in header:
-            errors.append(f"{path.name}: missing required column: {col}")
+    seen_ids: set[str] = set()
 
-    for i, row in enumerate(rows, start=2):
-        row_id = row.get(id_col, "").strip()
+    for index, row in enumerate(rows, start=1):
+        if not isinstance(row, dict):
+            errors.append(f"{path.name} item {index}: item must be an object")
+            continue
+
+        row_id = str(row.get(id_col, "")).strip()
+
         if not row_id:
-            errors.append(f"{path.name} line {i}: missing {id_col}")
+            errors.append(f"{path.name} item {index}: missing {id_col}")
         elif not ID_RE.match(row_id):
-            errors.append(f"{path.name} line {i}: invalid {id_col} format: {row_id}")
+            errors.append(f"{path.name} item {index}: invalid {id_col}: {row_id}")
         elif row_id in seen_ids:
-            errors.append(f"{path.name} line {i}: duplicate {id_col}: {row_id}")
+            errors.append(f"{path.name} item {index}: duplicate {id_col}: {row_id}")
+
         seen_ids.add(row_id)
 
-        for col in required:
-            if not row.get(col, "").strip():
-                errors.append(f"{path.name} line {i}: missing {col}")
+        for field in required:
+            value = row.get(field)
+            if value is None or value == "" or value == []:
+                errors.append(f"{path.name} item {index}: missing {field}")
 
-        if row.get("status") and row.get("status") not in VALID_STATUS:
-            errors.append(f"{path.name} line {i}: invalid status: {row.get('status')}")
-        if row.get("source_type") and row.get("source_type") not in VALID_SOURCE_TYPES:
-            errors.append(f"{path.name} line {i}: invalid source_type: {row.get('source_type')}")
-        if row.get("last_checked") and not DATE_RE.match(row.get("last_checked", "")):
-            errors.append(f"{path.name} line {i}: last_checked must be YYYY-MM-DD")
-        if row.get("source_url") and not row.get("source_url", "").startswith(("http://", "https://")):
-            errors.append(f"{path.name} line {i}: source_url must be absolute URL")
+        domains = row.get("domains")
+        if domains is not None and not isinstance(domains, list):
+            errors.append(f"{path.name} item {index}: domains must be a list")
+
+        status = row.get("status")
+        if status and status not in VALID_STATUS:
+            errors.append(f"{path.name} item {index}: invalid status: {status}")
+
+        source_type = row.get("source_type")
+        if source_type and source_type not in VALID_SOURCE_TYPES:
+            errors.append(f"{path.name} item {index}: invalid source_type: {source_type}")
+
+        last_checked = row.get("last_checked")
+        if last_checked and not DATE_RE.match(str(last_checked)):
+            errors.append(f"{path.name} item {index}: last_checked must be YYYY-MM-DD")
+
+        for url_field in ["source_url", "pdf_url", "image_url", "archived_url"]:
+            value = str(row.get(url_field, "")).strip()
+            if value and not is_url(value):
+                errors.append(f"{path.name} item {index}: {url_field} must be an absolute URL")
 
         if label == "program":
-            if row.get("level") not in VALID_LEVELS:
-                errors.append(f"{path.name} line {i}: invalid level: {row.get('level')}")
-            if row.get("research_oriented") not in VALID_RESEARCH:
-                errors.append(f"{path.name} line {i}: invalid research_oriented: {row.get('research_oriented')}")
+            level = row.get("level")
+            if level and level not in VALID_LEVELS:
+                errors.append(f"{path.name} item {index}: invalid level: {level}")
 
-    print(f"OK: {len(rows)} {label} rows checked.")
+            research = row.get("research_oriented")
+            if research and research not in VALID_RESEARCH:
+                errors.append(f"{path.name} item {index}: invalid research_oriented: {research}")
+
+    print(f"OK: {len(rows)} {label} entries checked.")
     return errors
 
 
@@ -88,9 +141,17 @@ def main() -> int:
             print(f"Missing file: {path}")
             return 1
 
-    errors = []
-    errors += validate_rows(PROGRAMS, "program_id", PROGRAM_REQUIRED, "program")
-    errors += validate_rows(RESEARCH, "structure_id", RESEARCH_REQUIRED, "research structure")
+    errors: list[str] = []
+
+    try:
+        errors += validate_rows(PROGRAMS, "program_id", PROGRAM_REQUIRED, "program")
+        errors += validate_rows(RESEARCH, "structure_id", RESEARCH_REQUIRED, "research structure")
+    except json.JSONDecodeError as error:
+        print(f"Invalid JSON: {error}")
+        return 1
+    except ValueError as error:
+        print(error)
+        return 1
 
     if errors:
         print("\nCatalog validation failed:\n")
