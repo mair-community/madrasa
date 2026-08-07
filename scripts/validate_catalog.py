@@ -26,7 +26,6 @@ PROGRAM_REQUIRED = [
     "level",
     "degree_type",
     "host_institution",
-    "unit",
     "city",
     "region",
     "mode",
@@ -45,12 +44,10 @@ RESEARCH_REQUIRED = [
     "name",
     "type",
     "host_institution",
-    "unit",
     "city",
     "region",
     "domains",
     "status",
-    "url",
     "last_checked",
 ]
 
