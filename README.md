@@ -61,7 +61,7 @@ Common rules:
   "level": "Master",
   "degree_type": "Master",
   "host_institution": ["National Institute of Posts and Telecommunications"],
-  "unit": "INPT",
+  "unit": null,
   "city": "Rabat",
   "region": "Rabat-Sale-Kenitra",
   "mode": "alternance",
@@ -69,7 +69,7 @@ Common rules:
   "language": ["French"],
   "tuition": "funded",
   "tuition_amount_mad": null,
-  "admission": ["Selective admission", "Application file", "Interview"],
+  "admission": ["Degree-based access"],
   "domains": ["Data Science", "Data Engineering", "AI", "Machine Learning"],
   "status": "active",
   "url": ["https://masterdata-ia.inpt.ac.ma/"],
@@ -86,14 +86,14 @@ Common rules:
   "name": "Bioinformatics Laboratory",
   "type": "Laboratory",
   "host_institution": ["Mohammed VI Polytechnic University"],
-  "unit": "College of Computing",
+  "unit": ["College of Computing"],
   "city": "Benguerir",
   "region": "Marrakesh-Safi",
   "domains": ["Bioinformatics", "Computational Biology", "Computational Genomics", "AI", "Machine Learning"],
   "status": "active",
   "url": ["https://bioinformatics.um6p.ma/"],
   "last_checked": "2026-08-01",
-  "notes": "Relevant team: Bioinformatics Lab, College of Computing."
+  "notes": null
 }
 ```
 
