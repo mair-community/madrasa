@@ -17,7 +17,8 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "catalog"
-PROGRAMS = CATALOG / "programs.json"
+
+PROGRAMS = CATALOG / "education_programs.json"
 RESEARCH_STRUCTURES = CATALOG / "research_structures.json"
 
 PROGRAM_REQUIRED = [
@@ -81,7 +82,8 @@ VALID_TUITION = {
     "unknown",
 }
 
-VALID_STATUS = {"active", "nonactive"}
+# Keep this operational, not verification-related.
+VALID_STATUS = {"active", "likely_active", "unknown", "inactive", "nonactive"}
 
 VALID_REGIONS = {
     "Tanger-Tetouan-Al Hoceima",
@@ -128,6 +130,7 @@ def is_blank(value: Any) -> bool:
 
 def require_fields(path: Path, rows: list[dict[str, Any]], required: list[str]) -> list[str]:
     errors: list[str] = []
+
     for index, row in enumerate(rows, start=1):
         for field in required:
             if field not in row or is_blank(row.get(field)):
@@ -135,23 +138,58 @@ def require_fields(path: Path, rows: list[dict[str, Any]], required: list[str]) 
                 if field == "duration_years" and field in row:
                     continue
                 errors.append(f"{path.name} item {index}: missing {field}")
+
     return errors
 
 
-def validate_list(row: dict[str, Any], field: str, index: int, file_name: str, allow_empty: bool = False) -> list[str]:
+def validate_string_list(
+    row: dict[str, Any],
+    field: str,
+    index: int,
+    file_name: str,
+    allow_empty: bool = False,
+) -> list[str]:
     value = row.get(field)
+
     if not isinstance(value, list):
         return [f"{file_name} item {index}: {field} must be a list"]
+
     if not allow_empty and not value:
         return [f"{file_name} item {index}: {field} must not be empty"]
+
     if any(not isinstance(item, str) or not item.strip() for item in value):
         return [f"{file_name} item {index}: {field} must contain non-empty strings"]
+
     return []
+
+
+def validate_optional_unit(row: dict[str, Any], index: int, file_name: str) -> list[str]:
+    """unit can be string, list of strings, null, or absent.
+
+    This avoids breaking entries where the host is clear but no specific school/lab/unit exists.
+    """
+    if "unit" not in row or row.get("unit") is None:
+        return []
+
+    value = row.get("unit")
+
+    if isinstance(value, str):
+        if not value.strip():
+            return [f"{file_name} item {index}: unit string must not be empty"]
+        return []
+
+    if isinstance(value, list):
+        if any(not isinstance(item, str) or not item.strip() for item in value):
+            return [f"{file_name} item {index}: unit list must contain non-empty strings"]
+        return []
+
+    return [f"{file_name} item {index}: unit must be a string, list, null, or absent"]
 
 
 def validate_urls(row: dict[str, Any], index: int, file_name: str) -> list[str]:
     errors: list[str] = []
     value = row.get("url")
+
     if not isinstance(value, list) or not value:
         return [f"{file_name} item {index}: url must be a non-empty list"]
 
@@ -160,6 +198,7 @@ def validate_urls(row: dict[str, Any], index: int, file_name: str) -> list[str]:
             errors.append(f"{file_name} item {index}: invalid url: {url!r}")
         if "[" in str(url) or "]" in str(url) or "](" in str(url):
             errors.append(f"{file_name} item {index}: url must be raw URL, not Markdown: {url!r}")
+
     return errors
 
 
@@ -167,23 +206,29 @@ def validate_common(path: Path, rows: list[dict[str, Any]], id_key: str) -> list
     errors: list[str] = []
     seen_ids: set[str] = set()
     seen_names: set[tuple[str, str, str]] = set()
+    file_name = path.name
 
     for index, row in enumerate(rows, start=1):
-        file_name = path.name
         row_id = str(row.get(id_key, "")).strip()
+
         if not ID_RE.match(row_id):
             errors.append(f"{file_name} item {index}: invalid {id_key}: {row_id!r}")
         elif row_id in seen_ids:
             errors.append(f"{file_name} item {index}: duplicate {id_key}: {row_id}")
-        seen_ids.add(row_id)
 
-        for field in ["host_institution", "unit", "domains"]:
-            errors += validate_list(row, field, index, file_name)
+        if row_id:
+            seen_ids.add(row_id)
+
+        errors += validate_string_list(row, "host_institution", index, file_name)
+        errors += validate_optional_unit(row, index, file_name)
+        errors += validate_string_list(row, "domains", index, file_name)
         errors += validate_urls(row, index, file_name)
 
         status = row.get("status")
         if status not in VALID_STATUS:
-            errors.append(f"{file_name} item {index}: status must be one of {sorted(VALID_STATUS)}, got {status!r}")
+            errors.append(
+                f"{file_name} item {index}: status must be one of {sorted(VALID_STATUS)}, got {status!r}"
+            )
 
         region = row.get("region")
         if region not in VALID_REGIONS:
@@ -197,13 +242,20 @@ def validate_common(path: Path, rows: list[dict[str, Any]], id_key: str) -> list
             if checked > date.today():
                 errors.append(f"{file_name} item {index}: last_checked cannot be in the future")
 
+        host_key = ""
+        host_value = row.get("host_institution")
+        if isinstance(host_value, list):
+            host_key = ";".join(host_value).casefold()
+
         name_key = (
             str(row.get("name", "")).casefold(),
             str(row.get("city", "")).casefold(),
-            ";".join(row.get("host_institution", [])).casefold() if isinstance(row.get("host_institution"), list) else "",
+            host_key,
         )
+
         if name_key in seen_names:
             errors.append(f"{file_name} item {index}: possible duplicate name/city/host: {row.get('name')}")
+
         seen_names.add(name_key)
 
     return errors
@@ -215,26 +267,32 @@ def validate_programs(rows: list[dict[str, Any]]) -> list[str]:
 
     for index, row in enumerate(rows, start=1):
         if row.get("level") not in VALID_LEVELS:
-            errors.append(f"programs.json item {index}: invalid level: {row.get('level')!r}")
+            errors.append(f"education_programs.json item {index}: invalid level: {row.get('level')!r}")
 
         if row.get("mode") not in VALID_MODES:
-            errors.append(f"programs.json item {index}: invalid mode: {row.get('mode')!r}")
+            errors.append(f"education_programs.json item {index}: invalid mode: {row.get('mode')!r}")
 
         if row.get("tuition") not in VALID_TUITION:
-            errors.append(f"programs.json item {index}: invalid tuition: {row.get('tuition')!r}")
+            errors.append(f"education_programs.json item {index}: invalid tuition: {row.get('tuition')!r}")
 
         duration = row.get("duration_years")
         if duration is not None:
             if not isinstance(duration, (int, float)) or isinstance(duration, bool) or duration <= 0:
-                errors.append(f"programs.json item {index}: duration_years must be a positive number or null")
+                errors.append("education_programs.json item {index}: duration_years must be a positive number or null")
 
         tuition_amount = row.get("tuition_amount_mad")
         if tuition_amount is not None:
-            if not isinstance(tuition_amount, (int, float)) or isinstance(tuition_amount, bool) or tuition_amount < 0:
-                errors.append(f"programs.json item {index}: tuition_amount_mad must be a non-negative number or null")
+            if (
+                not isinstance(tuition_amount, (int, float))
+                or isinstance(tuition_amount, bool)
+                or tuition_amount < 0
+            ):
+                errors.append(
+                    f"education_programs.json item {index}: tuition_amount_mad must be a non-negative number or null"
+                )
 
-        for field in ["language", "admission"]:
-            errors += validate_list(row, field, index, "programs.json", allow_empty=True)
+        errors += validate_string_list(row, "language", index, "education_programs.json")
+        errors += validate_string_list(row, "admission", index, "education_programs.json", allow_empty=True)
 
     return errors
 

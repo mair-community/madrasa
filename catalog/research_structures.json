@@ -93,7 +93,7 @@
     "region": "Fes-Meknes",
     "domains": ["AI", "NLP", "LLM", "Deep Learning", "Darija", "Low-Resource Languages"],
     "status": "active",
-    "url": null,
+    "url": ["https://aui.ma/school-of-science-and-engineering"],
     "last_checked": "2026-07-31",
     "notes": "Found via AUI faculty pages; a direct unit page is unavailable."
   },

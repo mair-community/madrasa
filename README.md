@@ -31,7 +31,7 @@ MADRASA is a community-maintained catalog for discovering AI-related education a
 
 | File | Description |
 |---|---|
-| `catalog/programs.json` | Main catalog of AI education programs. |
+| `catalog/education_programs.json` | Main catalog of AI education programs. |
 | `catalog/research_structures.json` | AI-related labs, centers, doctoral structures, and research groups. |
 | `api/stats.json` | Generated counts used by interfaces and badges. |
 | `api/*-badge.json` | Shields.io endpoint badge files generated from the catalog. |
@@ -39,7 +39,20 @@ MADRASA is a community-maintained catalog for discovering AI-related education a
 
 ## Data model
 
+## Data model
+
 The repository uses **JSON as the source of truth**. URLs are stored as lists, because one entry may need more than one official source.
+
+Common rules:
+
+* `host_institution` is always a list.
+* `domains` is always a list.
+* `url` is always a non-empty list of raw URLs.
+* `unit` may be a string, a list, `null`, or absent.
+* `status` means operational status: `active`, `likely_active`, `unknown`, or `inactive`.
+* `last_checked` must use `YYYY-MM-DD`.
+
+### Educational program example
 
 ```json
 {
@@ -47,19 +60,40 @@ The repository uses **JSON as the source of truth**. URLs are stored as lists, b
   "name": "Data and Artificial Intelligence",
   "level": "Master",
   "degree_type": "Master",
-  "host_institution": ["National Institute of Posts and Telecommunications (INPT)"],
-  "unit": ["INPT"],
+  "host_institution": ["National Institute of Posts and Telecommunications"],
+  "unit": "INPT",
   "city": "Rabat",
   "region": "Rabat-Sale-Kenitra",
-  "mode": "hybrid",
+  "mode": "alternance",
   "duration_years": 2,
   "language": ["French"],
   "tuition": "funded",
-  "domains": ["Data Science", "Data Engineering", "AI"],
+  "tuition_amount_mad": null,
+  "admission": ["Selective admission", "Application file", "Interview"],
+  "domains": ["Data Science", "Data Engineering", "AI", "Machine Learning"],
   "status": "active",
   "url": ["https://masterdata-ia.inpt.ac.ma/"],
   "last_checked": "2026-06-23",
-  "notes": "Alternance paid."
+  "notes": "Alternance-based master program."
+}
+```
+
+### Research structure example
+
+```json
+{
+  "structure_id": "um6p-colcom-bioinformatics-lab",
+  "name": "Bioinformatics Laboratory",
+  "type": "Laboratory",
+  "host_institution": ["Mohammed VI Polytechnic University"],
+  "unit": "College of Computing",
+  "city": "Benguerir",
+  "region": "Marrakesh-Safi",
+  "domains": ["Bioinformatics", "Computational Biology", "Computational Genomics", "AI", "Machine Learning"],
+  "status": "active",
+  "url": ["https://bioinformatics.um6p.ma/"],
+  "last_checked": "2026-08-01",
+  "notes": "Relevant team: Bioinformatics Lab, College of Computing."
 }
 ```
 
@@ -76,11 +110,11 @@ python scripts/build_stats.py
 python scripts/build_stats.py --check
 
 # Pretty-print programs
-python -m json.tool catalog/programs.json
+python -m json.tool catalog/education_programs.json
 
 # Search with jq
-jq '.[] | select(.level == "PhD")' catalog/programs.json
-jq '.[] | select(.city == "Rabat")' catalog/programs.json
+jq '.[] | select(.level == "PhD")' catalog/education_programs.json
+jq '.[] | select(.city == "Rabat")' catalog/education_programs.json
 ```
 
 ## Status labels

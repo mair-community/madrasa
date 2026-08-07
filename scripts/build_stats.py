@@ -47,7 +47,7 @@ def main() -> int:
     parser.add_argument("--check", action="store_true", help="Fail if generated badge/stat files are not up to date")
     args = parser.parse_args()
 
-    programs = read_json(CATALOG / "programs.json")
+    programs = read_json(CATALOG / "education_programs.json")
     structures = read_json(CATALOG / "research_structures.json")
 
     all_items = programs + structures

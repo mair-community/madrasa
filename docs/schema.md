@@ -2,7 +2,7 @@
 
 MADRASA uses JSON files as the source of truth.
 
-- `catalog/programs.json`
+- `catalog/education_programs.json`
 - `catalog/research_structures.json`
 
 Generated badge/stat files are stored in `api/`.
@@ -16,7 +16,7 @@ Generated badge/stat files are stored in `api/`.
 - `status` must be either `active` or `nonactive`.
 - Use English names for cities, regions, and institutions when possible.
 
-## `catalog/programs.json`
+## `catalog/education_programs.json`
 
 | Field | Required | Type | Description |
 |---|---:|---|---|

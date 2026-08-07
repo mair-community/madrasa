@@ -4,7 +4,7 @@ Thanks for helping maintain MADRASA, the Moroccan AI Education Catalog.
 
 ## What to edit
 
-- Add or update programs in `catalog/programs.json`.
+- Add or update programs in `catalog/education_programs.json`.
 - Add or update research structures in `catalog/research_structures.json`.
 - Do not edit `api/*.json` by hand. Generate them with `python scripts/build_stats.py`.
 
