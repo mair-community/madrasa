@@ -1,22 +1,27 @@
 name: Submit an AI education program
-about: Suggest a Moroccan AI/Data Science/PhD program to add to the catalog
-title: "Add program: <institution> - <program name>"
+about: Suggest a Moroccan AI/data/PhD program to add to MADRASA
+title: "Add program: <host> - <program name>"
 labels: ["program-submission"]
 body:
   - type: input
     id: program_name
     attributes:
       label: Program name
-      placeholder: Master Data & AI
+      placeholder: Data and Artificial Intelligence
     validations:
       required: true
   - type: input
-    id: institution
+    id: host_institution
     attributes:
-      label: Institution
-      placeholder: INPT, UCA, ENSIAS, etc.
+      label: Host institution
+      placeholder: INPT, ENSIAS, UCA, UM6P, etc.
     validations:
       required: true
+  - type: input
+    id: unit
+    attributes:
+      label: Unit
+      placeholder: Faculty, school, CEDoc, center, or department
   - type: dropdown
     id: level
     attributes:
@@ -26,7 +31,9 @@ body:
         - Engineer
         - Master
         - PhD
+        - Postdoctoral
         - Certificate
+        - Executive
         - Other
     validations:
       required: true
@@ -36,9 +43,9 @@ body:
       label: City
       placeholder: Rabat
   - type: input
-    id: source
+    id: url
     attributes:
-      label: Official source URL
+      label: Official/source URL
       placeholder: https://...
     validations:
       required: true
@@ -46,4 +53,4 @@ body:
     id: notes
     attributes:
       label: Notes
-      placeholder: Admission dates, fees, domains, research focus, etc.
+      placeholder: Admission details, tuition, domains, duration, language, etc.

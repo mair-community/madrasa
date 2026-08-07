@@ -1,0 +1,48 @@
+name: Submit an AI research structure
+about: Suggest a Moroccan AI lab, center, team, or research structure to add to MADRASA
+title: "Add research structure: <host> - <structure name>"
+labels: ["research-structure-submission"]
+body:
+  - type: input
+    id: structure_name
+    attributes:
+      label: Structure name
+      placeholder: Bioinformatics Laboratory
+    validations:
+      required: true
+  - type: input
+    id: type
+    attributes:
+      label: Type
+      placeholder: Laboratory, Center, Research team, Research unit, Computing infrastructure
+    validations:
+      required: true
+  - type: input
+    id: host_institution
+    attributes:
+      label: Host institution
+      placeholder: UM6P, UIR, AUI, Cadi Ayyad University, etc.
+    validations:
+      required: true
+  - type: input
+    id: unit
+    attributes:
+      label: Unit
+      placeholder: College, school, faculty, center, or lab
+  - type: input
+    id: city
+    attributes:
+      label: City
+      placeholder: Benguerir
+  - type: input
+    id: url
+    attributes:
+      label: Official/source URL
+      placeholder: https://...
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      placeholder: AI domains, team name, recent activity, publications, projects, etc.

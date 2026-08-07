@@ -20,5 +20,5 @@ jobs:
       - name: Validate JSON catalog
         run: python scripts/validate_catalog.py
 
-      - name: Build stats
-        run: python scripts/build_stats.py
+      - name: Check badge/stat files
+        run: python scripts/build_stats.py --check
