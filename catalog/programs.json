@@ -1,0 +1,160 @@
+[
+  {
+    "program_id": "inpt-master-data-ia",
+    "name": "Data and Artificial intelligence",
+    "level": "Master",
+    "degree_type": "Master",
+    "host_institution": [
+      "National Institute of Posts and Telecommunications (INPT)"
+    ],
+    "unit": [
+      "INPT"
+    ],
+    "city": "Rabat",
+    "region": "Rabat-Sale-Kenitra",
+    "mode": "hybrid",
+    "duration_years": 2,
+    "language": ["French"],
+    "tuition": "funded",
+    "tuition_amount_mad": null,
+    "admission": ["Degree-based access"],
+    "domains": [
+      "Data Science",
+      "Data Engineering",
+      "AI"
+    ],
+    "status": "active",
+    "url": [
+      "https://masterdata-ia.inpt.ac.ma/"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": "Alternance paid."
+  },
+  {
+    "program_id": "ensias-master-science-donnees-big-data",
+    "name": "Data Science and Big Data",
+    "level": "Master",
+    "degree_type": "Master",
+    "host_institution": [
+      "Mohammed V University in Rabat"
+    ],
+    "unit": [
+      "ENSIAS"
+    ],
+    "city": "Rabat",
+    "region": "Rabat-Sale-Kenitra",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": ["French"],
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": ["Degree-based access"],
+    "domains": [
+      "Artificial Intelligence",
+      "Data Science",
+      "Big Data",
+      "Data Mining"
+    ],
+    "status": "active",
+    "url": [
+      "https://ensias.um5.ac.ma/article/master-recherche-en-science-de-donn%C3%A9es-et-big-data",
+      "https://ensias.um5.ac.ma/sites/ensias.um5.ac.ma/files/FICHE%202017%20MasterSDBD.pdf"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "ensias-engineer",
+    "name": "Engineering Degree",
+    "level": "Engineer",
+    "degree_type": "Engineering Degree",
+    "host_institution": [
+      "Mohammed V University in Rabat"
+    ],
+    "unit": [
+      "ENSIAS"
+    ],
+    "city": "Rabat",
+    "region": "Rabat-Sale-Kenitra",
+    "mode": "in_person",
+    "duration_years": 3,
+    "language": ["French", "English"],
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": ["Degree-based access","Competition-based Access"],
+    "domains": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Data Science",
+      "Software Engineering"
+    ],
+    "status": "active",
+    "url": [
+      "https://ensias.um5.ac.ma/page/formation-ing%C3%A9nieur-0"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "ensias-phd-st2i",
+    "name": "Computer Science and Engineering Sciences",
+    "level": "PhD",
+    "degree_type": "PhD",
+    "host_institution": [
+      "Mohammed V University in Rabat"
+    ],
+    "unit": [
+      "ENSIAS"
+    ],
+    "city": "Rabat",
+    "region": "Rabat-Sale-Kenitra",
+    "mode": "in_person",
+    "duration_years": 3,
+    "language": ["French", "English"],
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": ["Degree-based access"],
+    "domains": [
+      "Computer Science",
+      "Artificial Intelligence"
+    ],
+    "status": "active",
+    "url": [
+      "https://ensias.um5.ac.ma/page/cedoc-st2i",
+      "https://ensias.um5.ac.ma/article/formation-doctorale"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "um5-ensam-india",
+    "name": "Digital Engineering in Data Science, Artificial Intelligence and Digital Health",
+    "level": "Engineer",
+    "degree_type": "Engineering Degree",
+    "host_institution": [
+      "Mohammed V University in Rabat"
+    ],
+    "unit": [
+      "ENSAM"
+    ],
+    "city": "Rabat",
+    "region": "Rabat-Sale-Kenitra",
+    "mode": "in_person",
+    "duration_years": 3,
+    "language": ["French"],
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": ["Degree-based access"],
+    "domains": [
+      "Data Science",
+      "Artificial Intelligence",
+      "Digital Health"
+    ],
+    "status": "active",
+    "url": [
+      "https://ensam.um5.ac.ma/index.php/node/98"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  }
+]
