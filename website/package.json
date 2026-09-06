@@ -1,0 +1,29 @@
+{
+  "name": "madrasa-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Builds the two optional enhancement bundles for the MADRASA site: the React select islands and the GSAP/Lenis motion layer. The site itself is plain ES modules.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mair-community/madrasa.git"
+  },
+  "scripts": {
+    "build": "node scripts/build_bundles.mjs && node scripts/build_site.mjs",
+    "dev": "python3 scripts/serve.py",
+    "check": "node scripts/build_bundles.mjs --check",
+    "test": "node --test scripts/site.test.mjs"
+  },
+  "dependencies": {
+    "gsap": "3.13.0",
+    "lenis": "1.1.13",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-select": "^5.10.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "jsdom": "^26.1.0"
+  }
+}

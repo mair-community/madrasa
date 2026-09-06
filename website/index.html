@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- Every asset and route link is relative to this base, so the same build works
+     at a domain root and at a GitHub Pages project path. scripts/build_site.py
+     rewrites the href at deploy time. -->
+<base href="/">
+<title>MADRASA · Moroccan AI education & research, mapped</title>
+<meta name="description" content="A community-curated catalog of AI education programs and AI research structures in Morocco. Search labs, centers, masters, engineering and PhD programs by institution, city, region and domain.">
+<meta name="theme-color" content="#FDFBF8">
+<meta name="color-scheme" content="light">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MADRASA">
+<meta property="og:title" content="MADRASA · Moroccan AI education & research, mapped">
+<meta property="og:description" content="A community-curated catalog of AI education programs and AI research structures in Morocco.">
+<meta property="og:image" content="assets/logo.png">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="assets/logo.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<!-- Turned on by scripts/serve.py and scripts/build_site.py when the matching
+     file in web/dist/ exists. Empty means "not built": the site then keeps its
+     native <select> and its CSS scroll reveals, and never requests a bundle that
+     is not there · no failed request, no console noise. -->
+<meta name="madrasa-islands" content="">
+<meta name="madrasa-motion" content="">
+
+<link rel="stylesheet" href="web/css/styles.css">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "MADRASA · Moroccan AI education and research catalog",
+  "description": "A community-maintained catalog of AI education programs and AI research structures in Morocco.",
+  "license": "https://opensource.org/licenses/MIT",
+  "isAccessibleForFree": true,
+  "creator": { "@type": "Organization", "name": "MAIR", "url": "https://mair.ma/" },
+  "distribution": [
+    { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://raw.githubusercontent.com/mair-community/madrasa/main/catalog/education_programs.json" },
+    { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://raw.githubusercontent.com/mair-community/madrasa/main/catalog/research_structures.json" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Shared SVG defs: the zellij lattice used as page texture -->
+<svg class="svg-defs" aria-hidden="true" focusable="false" width="0" height="0">
+  <defs>
+    <pattern id="zellij" width="120" height="120" patternUnits="userSpaceOnUse">
+      <polygon points="60.00,10.00 74.64,24.64 95.36,24.64 95.36,45.36 110.00,60.00 95.36,74.64 95.36,95.36 74.64,95.36 60.00,110.00 45.36,95.36 24.64,95.36 24.64,74.64 10.00,60.00 24.64,45.36 24.64,24.64 45.36,24.64"
+        fill="none" stroke="currentColor" stroke-width="1"/>
+      <polygon points="0.00,10.00 14.64,24.64 35.36,24.64 35.36,45.36 50.00,60.00 35.36,74.64 35.36,95.36 14.64,95.36 0.00,110.00"
+        fill="none" stroke="currentColor" stroke-width="1" transform="translate(-60,-60)"/>
+      <rect x="52" y="52" width="16" height="16" transform="rotate(45 60 60)" fill="none" stroke="currentColor" stroke-width="1"/>
+    </pattern>
+  </defs>
+</svg>
+
+<header class="site-header" id="site-header">
+  <div class="shell site-header__inner">
+    <a class="brand" href="./" data-link aria-label="MADRASA · home">
+      <img class="brand__ecosystem" src="assets/logo.png" alt="" width="80" height="19">
+      <span class="brand__divider" aria-hidden="true"></span>
+      <span class="brand__identity"><span class="brand__word">MADRASA</span><span class="brand__descriptor">AI education &amp; research</span></span>
+    </a>
+
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="./" data-link data-nav="">Home</a>
+      <a href="explore" data-link data-nav="explore">Explore</a>
+      <a href="institutions" data-link data-nav="institutions">Institutions</a>
+      <a href="about" data-link data-nav="about">About</a>
+      <a href="contribute" data-link data-nav="contribute">Contribute</a>
+      <div class="site-nav__socials" role="group" aria-label="MAIR community">
+        <a href="https://www.linkedin.com/company/mairma/" class="social-btn" aria-label="MAIR on LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.3 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.4-.75 1.37-1.55 2.82-1.55 3.02 0 3.58 1.99 3.58 4.58v5.22Z"/></svg>
+        </a>
+        <a href="https://discord.gg/ZtNuKJ7V2H" class="social-btn" aria-label="Join MAIR on Discord" title="Discord" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M19.7 5.2a18 18 0 0 0-4.5-1.4l-.55 1.1a16.6 16.6 0 0 0-5.3 0L8.8 3.8a18 18 0 0 0-4.5 1.4C1.45 9.4.68 13.5 1.06 17.55a18.2 18.2 0 0 0 5.5 2.77l1.12-1.82-1.7-.83.42-.32c3.57 1.64 7.65 1.64 11.2 0l.43.32-1.7.83 1.12 1.82a18.2 18.2 0 0 0 5.5-2.77c.46-4.68-.8-8.73-3.25-12.35ZM8.52 15.1c-1.07 0-1.94-.97-1.94-2.17s.85-2.18 1.94-2.18c1.1 0 1.97.99 1.94 2.18 0 1.2-.86 2.17-1.94 2.17Zm6.96 0c-1.08 0-1.94-.97-1.94-2.17s.85-2.18 1.94-2.18c1.1 0 1.97.99 1.94 2.18 0 1.2-.85 2.17-1.94 2.17Z"/></svg>
+        </a>
+      </div>
+    </nav>
+
+    <div class="site-header__actions">
+      <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><g stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></g></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1"></main>
+
+<footer class="site-footer">
+  <div class="shell">
+    <div class="site-footer__top">
+      <div class="site-footer__brand">
+        <a class="brand brand--footer" href="./" data-link aria-label="Madrasa home">
+          <img class="brand__ecosystem" src="assets/logo.png" alt="" width="80" height="19">
+          <span class="brand__divider" aria-hidden="true"></span>
+          <span class="brand__identity"><span class="brand__word">MADRASA</span><span class="brand__descriptor">AI education &amp; research</span></span>
+        </a>
+        <a class="ecosystem-credit" href="https://mair.ma/">Part of the MAIR ecosystem</a>
+        <p class="footer-blurb">MADRASA is an open, community-maintained map of where artificial intelligence is taught and researched in Morocco.</p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Footer">
+        <div>
+          <h3>Catalog</h3>
+          <a href="explore" data-link>Explore all</a>
+          <a href="explore?kind=program" data-link>Programs</a>
+          <a href="explore?kind=structure" data-link>Labs &amp; centers</a>
+          <a href="institutions" data-link>Institutions</a>
+        </div>
+        <div>
+          <h3>Project</h3>
+          <a href="about" data-link>About</a>
+          <a href="contribute" data-link>Contribute</a>
+          <a href="https://github.com/mair-community/madrasa" rel="noopener">GitHub</a>
+          <a href="https://github.com/mair-community/madrasa/blob/main/docs/schema.md" rel="noopener">Schema</a>
+        </div>
+        <div>
+          <h3>Community</h3>
+          <a href="https://mair.ma/" rel="noopener">MAIR</a>
+          <a href="https://discord.gg/ZtNuKJ7V2H" rel="noopener">Discord</a>
+          <a href="https://github.com/mair-community/madrasa/blob/main/LICENSE" rel="noopener">MIT License</a>
+        </div>
+      </nav>
+    </div>
+    <div class="site-footer__bottom">
+      <p>An independent community catalog. Always verify admission details, fees and deadlines on the official institution website.</p>
+      <p class="site-footer__meta" id="footer-meta"></p>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="web/js/app.js"></script>
+<noscript>
+  <style>.submission-form { display: none; }</style>
+  <div class="shell noscript">
+    <h1>MADRASA</h1>
+    <p>This catalog browser needs JavaScript. The underlying data is plain JSON and always readable without it:</p>
+    <ul>
+      <li><a href="catalog/education_programs.json">catalog/education_programs.json</a></li>
+      <li><a href="catalog/research_structures.json">catalog/research_structures.json</a></li>
+    </ul>
+  </div>
+</noscript>
+</body>
+</html>

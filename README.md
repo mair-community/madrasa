@@ -137,3 +137,9 @@ jq '.[] | select(.city == "Rabat")' catalog/education_programs.json
 ## Disclaimer
 
 This is an independent community catalog. Always verify admission details, accreditation, fees, deadlines, and requirements on the official institution website.
+# Website
+
+Browse the catalog at **https://madrasa.mair.ma/**.
+The frontend lives in [`website/`](website/README.md). Cloudflare Pages publishes
+every successful build from `main`, including changes to root `catalog/*.json`.
+There is no separate website dataset to maintain.
