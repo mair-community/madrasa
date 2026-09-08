@@ -95,7 +95,7 @@ export default function entryPage(catalog, { kind, id }) {
       el('hr.divider'),
       el('div.stack.stack--sm', null,
         statusDot(entry.status),
-        el('p.tiny.muted', { text: entry.lastChecked ? `Source last checked on ${formatDate(entry.lastChecked)}.` : 'No verification date recorded.' }),
+        el('p.tiny.muted', { text: entry.lastChecked ? `Source last checked on ${formatDate(entry.lastChecked)}.` : 'No source check date recorded.' }),
       ),
       el('a.btn.btn--sm.btn--block', {
         href: `${LINKS.issues}/new?title=${encodeURIComponent(`Update ${entry.kind}: ${entry.name}`)}&body=${encodeURIComponent(`Entry id: \`${entry.id}\`\n\nWhat needs updating?\n\n`)}`,

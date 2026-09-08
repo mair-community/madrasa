@@ -47,7 +47,7 @@ export default function submitPage() {
     field('url', 'Official source URL', { type: 'url', pattern: 'https?://.+', placeholder: 'https://', maxlength: 1500 }),
     field('domains', 'Research areas (comma-separated)'), structure, program,
     field('status', 'Operational status', { options: [['unknown','Unknown'],['active','Active'],['likely_active','Likely active'],['inactive','Inactive']] }),
-    field('checked', 'Date you last verified the official source', { type: 'date', max: new Date().toLocaleDateString('en-CA') }),
+    field('checked', 'Date you last checked the official source', { type: 'date', max: new Date().toLocaleDateString('en-CA') }),
     field('notes', 'Additional details', { type: 'textarea', required: false }),
     el('fieldset.submission-group', null, el('legend.h3', { text: 'Your contact details' }),
       field('contact', 'Your name', { autocomplete: 'name' }),

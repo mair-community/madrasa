@@ -103,9 +103,9 @@ function hero(catalog) {
             'Find your place ', el('br'), 'in ', el('em', { text: 'Moroccan AI.' }),
           ),
           el('p.lede.hero__lede', {
-            text: 'Discover where AI is taught and researched. Explore verified programs, laboratories, and the institutions behind them.',
+            text: 'Discover where AI is taught and researched. Explore programs, laboratories, and the institutions behind them, with sources checked.',
           }),
-          el('p.hero__source-note', null, icon('check', 14), 'Every entry includes an official source and a verification date.'),
+          el('p.hero__source-note', null, icon('check', 14), 'Every entry includes an official source and a source check date.'),
         ),
         el('nav.hero__directory', { 'aria-label': 'Browse the catalog' },
           el('p.hero__directory-label', { text: 'Start exploring' }),
@@ -180,7 +180,7 @@ function recentSection(catalog) {
   const recent = queryEntries(catalog, { sort: 'checked' }).slice(0, 6);
   return el('section.section', null,
     el('div.shell', null,
-      sectionHead('Recently verified', {
+      sectionHead('Recently checked sources', {
         eyebrow: 'Fresh from the catalog',
         lede: 'Every entry carries the date a human last checked its official source. These were checked most recently.',
         action: linkArrow('Explore all entries', to('explore', { sort: 'checked' })),
@@ -259,7 +259,7 @@ function domainsSection(catalog) {
 function methodSection(catalog) {
   const steps = [
     ['Sourced from the institution itself', 'Entries are built from official university, school, lab or ministry pages · never from rankings or hearsay.'],
-    ['Checked, dated and re-checked', `Each record stores a verification date. The most recent sweep was ${formatDate(catalog.stats.lastChecked)}.`],
+    ['Checked, dated and re-checked', `Each record stores a source check date. The most recent sweep was ${formatDate(catalog.stats.lastChecked)}.`],
     ['Reviewed in public', 'Every change is a pull request, validated automatically against a published JSON schema before it can be merged.'],
   ];
 

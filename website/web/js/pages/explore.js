@@ -345,7 +345,7 @@ export default function explore(catalog) {
       el('div.explore__head', null,
         el('div.section-head__text', null,
           el('h1.h1', { text: 'Explore the catalog' }),
-          el('p.lede', { text: `${plural(catalog.stats.entries, 'verified entry', 'verified entries')} across ${plural(catalog.stats.institutions, 'institution')} · filter by level, place, institution or research domain.` }),
+          el('p.lede', { text: `${plural(catalog.stats.entries, 'entry', 'entries')} with sources checked across ${plural(catalog.stats.institutions, 'institution')} · filter by level, place, institution or research domain.` }),
         ),
         searchInput,
         segmented,

@@ -72,7 +72,7 @@ for (const [path, render, params = {}] of routes) {
   let canonical = doc.querySelector('link[rel="canonical"]');
   if (!canonical) { canonical = doc.createElement('link'); canonical.rel = 'canonical'; doc.head.append(canonical); }
   canonical.href = url;
-  doc.querySelector('#footer-meta').textContent = `${catalog.stats.entries} entries · last verified ${catalog.stats.lastChecked}`;
+  doc.querySelector('#footer-meta').textContent = `${catalog.stats.entries} entries · sources last checked ${catalog.stats.lastChecked}`;
   for (const a of doc.querySelectorAll('#site-nav a[data-nav]')) {
     const section = path.split('/')[0];
     const active = a.dataset.nav === section || (a.dataset.nav === 'explore' && ['program','structure'].includes(section)) || (a.dataset.nav === 'contribute' && section === 'submit');

@@ -99,7 +99,7 @@ export function entryCard(entry) {
     el('div.card__tags', null, tags),
     el('div.card__foot', null,
       statusDot(entry.status),
-      entry.lastChecked && el('time', { datetime: entry.lastChecked, text: `Verified ${formatDate(entry.lastChecked)}` }),
+      entry.lastChecked && el('time', { datetime: entry.lastChecked, text: `Source checked ${formatDate(entry.lastChecked)}` }),
     ),
   );
 }
@@ -244,7 +244,7 @@ function patternLayer() {
 export function contributeCta() {
   return ctaPanel({
     title: 'Something missing? The catalog is edited by the community.',
-    text: 'MADRASA is maintained in the open. Adding a program or a lab means opening one issue · or one small pull request against a JSON file. Every entry needs an official source and a verification date.',
+    text: 'MADRASA is maintained in the open. Adding a program or a lab means opening one issue · or one small pull request against a JSON file. Every entry needs an official source and a source check date.',
     actions: [
       el('a.btn.btn--solid', { href: to('contribute') }, 'How to contribute', icon('arrow', 15)),
       el('a.btn.btn--ghost', { href: LINKS.repo, rel: 'noopener' }, 'View on GitHub'),

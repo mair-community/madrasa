@@ -15,7 +15,7 @@ const EXCLUDE = [
   'Private training offers without a reliable source.',
   'Expired calls, unless marked as nonactive.',
   'Entries without at least one URL.',
-  'Personal opinions, rankings or unverified claims.',
+  'Personal opinions, rankings or unsupported claims.',
 ];
 
 function pathCard({ title, text, cta, href, iconName, note }) {
@@ -141,7 +141,7 @@ export default function contribute(catalog) {
             el('p.small.muted', { text: 'The same validator runs in CI on every pull request, so a failing check locally means a failing check there too.' }),
             el('div.wrap-gap', null,
               el('a.btn.btn--sm', { href: LINKS.schema, target: '_blank', rel: 'noopener' }, 'Field reference', icon('external', 14)),
-              el('a.btn.btn--sm.btn--ghost', { href: to('about') }, 'How entries are verified'),
+              el('a.btn.btn--sm.btn--ghost', { href: to('about') }, 'How sources are checked'),
             ),
           ),
         ),
@@ -152,7 +152,7 @@ export default function contribute(catalog) {
           el('div.stat', null, el('span.stat__n', { text: String(catalog.stats.entries) }), el('span.stat__label', { text: 'Entries today' })),
           el('div.stat', null, el('span.stat__n', { text: String(catalog.stats.institutions) }), el('span.stat__label', { text: 'Institutions covered' })),
           el('div.stat', null, el('span.stat__n', { text: `${catalog.stats.regions}/12` }), el('span.stat__label', { text: 'Regions with an entry' })),
-          el('div.stat', null, el('span.stat__n', { text: formatDate(catalog.stats.lastChecked).split(' ').slice(1).join(' ') }), el('span.stat__label', { text: 'Most recent verification' })),
+          el('div.stat', null, el('span.stat__n', { text: formatDate(catalog.stats.lastChecked).split(' ').slice(1).join(' ') }), el('span.stat__label', { text: 'Most recent source check' })),
         ),
         el('p.small.muted.mt-4', { text: 'Five of Morocco’s twelve regions have no entry at all yet. Southern and eastern institutions are the biggest known gap.' }),
       ),

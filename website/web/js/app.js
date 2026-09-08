@@ -147,7 +147,7 @@ function updateFooterMeta(catalog) {
   if (!footerMeta || footerMeta.dataset.filled) return;
   footerMeta.dataset.filled = 'true';
   footerMeta.replaceChildren(
-    document.createTextNode(`${catalog.stats.entries} entries · last verified ${formatDate(catalog.stats.lastChecked)} · `),
+    document.createTextNode(`${catalog.stats.entries} entries · sources last checked ${formatDate(catalog.stats.lastChecked)} · `),
     el('a', { href: `${BASE}catalog/education_programs.json`, text: 'raw data' }),
   );
 }

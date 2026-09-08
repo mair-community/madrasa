@@ -41,7 +41,7 @@ export default function about(catalog) {
               el('div.stat', null, el('span.stat__n', { text: String(catalog.stats.institutions) }), el('span.stat__label', { text: 'Institutions' })),
               el('div.stat', null, el('span.stat__n', { text: String(catalog.stats.domains) }), el('span.stat__label', { text: 'Domain tags' })),
             ),
-            el('p.small.muted', { text: `Catalog last verified on ${formatDate(catalog.stats.lastChecked)}. Counts are computed from the JSON files at page load, so this page can never drift from the data.` }),
+            el('p.small.muted', { text: `Catalog sources last checked on ${formatDate(catalog.stats.lastChecked)}. Counts are computed from the JSON files at page load, so this page can never drift from the data.` }),
             el('div.wrap-gap', null,
               el('a.btn.btn--sm', { href: `${to('')}catalog/research_structures.json`, target: '_blank', rel: 'noopener' }, 'research_structures.json'),
               el('a.btn.btn--sm', { href: `${to('')}catalog/education_programs.json`, target: '_blank', rel: 'noopener' }, 'education_programs.json'),
@@ -59,7 +59,7 @@ export default function about(catalog) {
           ['One official source, minimum', 'Preference order: the institution’s own page, then its admissions platform, then an official PDF on an institution domain, then a ministry, CNRST or Jamiati portal. Secondary sources are a last resort.'],
           ['AI has to be visible', 'A generic computer science degree does not qualify. There must be a stated AI, machine learning, data science or closely adjacent component · even if the structure’s official name is broader.'],
           ['Recorded, not paraphrased', 'Fields follow a published schema with fixed vocabularies for level, mode, tuition, status and region, so entries stay comparable instead of turning into free prose.'],
-          ['Dated and re-checked', 'Every record stores last_checked. An entry that stops being verifiable is marked nonactive rather than deleted, so the history stays intact.'],
+          ['Dated and re-checked', 'Every record stores last_checked. An entry whose source can no longer be confirmed is marked nonactive rather than deleted, so the history stays intact.'],
           ['Merged in public', 'Changes arrive as pull requests. Automated validation runs on each one; a maintainer checks the source before merging.'],
         ].map(([title, text]) => el('li.step', null,
           el('div.step__body', null,
@@ -127,6 +127,6 @@ export default function about(catalog) {
   return {
     node: page,
     title: 'About · MADRASA',
-    description: 'How the MADRASA catalog of Moroccan AI education and research is built, verified and maintained.',
+    description: 'How the MADRASA catalog of Moroccan AI education and research is built, source checked and maintained.',
   };
 }

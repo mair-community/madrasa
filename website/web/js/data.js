@@ -290,7 +290,7 @@ function score(entry, query) {
 export const SORTS = {
   relevance: { label: 'Best match' },
   name: { label: 'Name (A–Z)' },
-  checked: { label: 'Recently verified' },
+  checked: { label: 'Recently checked sources' },
   institution: { label: 'Institution' },
 };
 

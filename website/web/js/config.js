@@ -124,7 +124,7 @@ export const LABELS = {
   status: {
     active: 'Active',
     likely_active: 'Likely active',
-    unknown: 'Unverified',
+    unknown: 'Status unknown',
     inactive: 'Not active',
     nonactive: 'Not active',
   },
