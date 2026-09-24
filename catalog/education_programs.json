@@ -1002,7 +1002,7 @@
     "language": ["French"],
     "tuition": "public",
     "tuition_amount_mad": null,
-    "admission": ["Bachelor's degree or equivalent"]
+    "admission": ["Bachelor's degree or equivalent"],
     "domains": [
       "Artificial Intelligence",
       "Machine Learning",
