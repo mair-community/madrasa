@@ -166,7 +166,7 @@
       "Sidi Mohamed Ben Abdellah University"
     ],
     "unit": [
-      "FST Fes"
+      "FST of Fez"
     ],
     "city": "Fes",
     "region": "Fes-Meknes",
@@ -199,6 +199,1637 @@
       "https://fst-usmba.ac.ma/framework/uploads/2026/06/Fiche_MST_SDSI.pdf"
     ],
     "last_checked": "2026-09-20",
+    "notes": null
+  },
+  {
+    "program_id": "uca-master-ai",
+    "name": "Artificial Intelligence",
+    "level": "Master",
+    "degree_type": "Master",
+    "host_institution": [
+      "Cadi Ayyad University"
+    ],
+    "unit": [
+      "FS of Marrakesh"
+    ],
+    "city": "Marrakesh",
+    "region": "Marrakesh-Safi",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Bachelor's degree or equivalent",
+    "domains": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Natural Language Processing",
+      "Computer Vision"
+    ],
+    "status": "active",
+    "url": [
+      "https://www.uca.ma/en/formations/initial-training/intelligence-artificielle"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "uca-master-sda",
+    "name": "Data Science and Analytics",
+    "level": "Master",
+    "degree_type": "Master",
+    "host_institution": [
+      "Cadi Ayyad University"
+    ],
+    "unit": [
+      "FP of Safi"
+    ],
+    "city": "Safi",
+    "region": "Marrakesh-Safi",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Bachelor's degree or equivalent",
+    "domains": [
+      "Data Science",
+      "Analytics",
+      "Artificial Intelligence"
+    ],
+    "status": "active",
+    "url": [
+      "https://www.uca.ma/en/formations/initial-training/science-des-donnees-et-analytique"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "uca-master-isi",
+    "name": "Information Systems Engineering",
+    "level": "Master",
+    "degree_type": "Master",
+    "host_institution": [
+      "Cadi Ayyad University"
+    ],
+    "unit": [
+      "FS of Marrakesh"
+    ],
+    "city": "Marrakesh",
+    "region": "Marrakesh-Safi",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Bachelor's degree or equivalent",
+    "domains": [
+      "Information Systems",
+      "Artificial Intelligence",
+      "Big Data"
+    ],
+    "status": "active",
+    "url": [
+      "https://www.uca.ma/en/formations/initial-training/ingenierie-des-systemes-dinformation"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "uca-engineer-gia",
+    "name": "Computer Science and Artificial Intelligence",
+    "level": "Engineer",
+    "degree_type": "State Engineering Degree",
+    "host_institution": [
+      "Cadi Ayyad University"
+    ],
+    "unit": [
+      "ENSA of Safi"
+    ],
+    "city": "Marrakesh",
+    "region": "Marrakesh-Safi",
+    "mode": "in_person",
+    "duration_years": 3,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Engineering admission",
+    "domains": [
+      "Computer Science",
+      "Artificial Intelligence",
+      "Internet of Things",
+      "Big Data"
+    ],
+    "status": "active",
+    "url": [
+      "https://www.uca.ma/en/formations/initial-training/genie-informatique-et-intelligence-artificielle"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "uca-phd-ms2ia",
+    "name": "Mathematics, Information Systems and Artificial Intelligence (MS2IA)",
+    "level": "PhD",
+    "degree_type": "PhD",
+    "host_institution": [
+      "Cadi Ayyad University"
+    ],
+    "unit": [
+      "FST of Marrakesh"
+    ],
+    "city": "Marrakesh",
+    "region": "Marrakesh-Safi",
+    "mode": "research",
+    "duration_years": 3,
+    "language": "French/English",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Master or equivalent",
+    "domains": [
+      "Applied Mathematics",
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Data Science",
+      "Big Data",
+      "HPC",
+      "Quantum Programming"
+    ],
+    "status": "active",
+    "url": [
+      "https://www.uca.ma/en/formations-doctorales/mathematiques-systeme-informatique-et-intelligence-artificielle-ms2ia"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "uca-phd-informatique",
+    "name": "Doctoral Training in Computer Science",
+    "level": "PhD",
+    "degree_type": "PhD",
+    "host_institution": [
+      "Cadi Ayyad University"
+    ],
+    "unit": [
+      "FS of Marrakesh"
+    ],
+    "city": "Marrakesh",
+    "region": "Marrakesh-Safi",
+    "mode": "research",
+    "duration_years": 3,
+    "language": "French/English",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Master or equivalent",
+    "domains": [
+      "Computer Science",
+      "Artificial Intelligence Applications",
+      "Big Data",
+      "Security",
+      "Blockchain",
+      "Robotics",
+      "Bioinformatics"
+    ],
+    "status": "active",
+    "url": [
+      "https://pedoc.uca.ma/guest/download/fichier-formation-3-Informatique"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "uit-master-bdiaaa",
+    "name": "Big Data, Artificial Intelligence and Advanced Applications",
+    "level": "Master",
+    "degree_type": "Master",
+    "host_institution": [
+      "Ibn Tofail University"
+    ],
+    "unit": [
+      "FS of Kenitra"
+    ],
+    "city": "Kenitra",
+    "region": "Rabat-Sale-Kenitra",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Bachelor's degree or equivalent",
+    "domains": [
+      "Big Data",
+      "Artificial Intelligence",
+      "Advanced Applications"
+    ],
+    "status": "active",
+    "url": [
+      "https://fs.uit.ac.ma/master-nouvelles-generations/"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": "Listed among 2024-2025 masters."
+  },
+  {
+    "program_id": "uit-master-ia-cyber",
+    "name": "Artificial Intelligence and Cybersecurity",
+    "level": "Master",
+    "degree_type": "Master",
+    "host_institution": [
+      "Ibn Tofail University"
+    ],
+    "unit": [
+      "FS of Kenitra"
+    ],
+    "city": "Kenitra",
+    "region": "Rabat-Sale-Kenitra",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": ["French"],
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": ["Bachelor's degree or equivalent"],
+    "domains": [
+      "Artificial Intelligence",
+      "Cybersecurity"
+    ],
+    "status": "active",
+    "url": [
+      "https://fs.uit.ac.ma/master-nouvelles-generations/"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": "Listed among 2024-2025 masters."
+  },
+  {
+    "program_id": "uit-master-info-ia",
+    "name": "Computer Science and Artificial Intelligence",
+    "level": "Master",
+    "degree_type": "Master",
+    "host_institution": [
+      "Ibn Tofail University"
+    ],
+    "unit": [
+      "FS of Kenitra"
+    ],
+    "city": "Kenitra",
+    "region": "Rabat-Sale-Kenitra",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": ["French"],
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": ["Bachelor's degree or equivalent"],
+    "domains": [
+      "Computer Science",
+      "Artificial Intelligence"
+    ],
+    "status": "active",
+    "url": [
+      "https://fs.uit.ac.ma/master-nouvelles-generations/"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": "Listed among 2024-2025 masters."
+  },
+  {
+    "program_id": "uit-master-systemes-intelligents",
+    "name": "Intelligent Systems Engineering",
+    "level": "Master",
+    "degree_type": "Master",
+    "host_institution": [
+      "Ibn Tofail University"
+    ],
+    "unit": [
+      "FS of Kenitra"
+    ],
+    "city": "Kenitra",
+    "region": "Rabat-Sale-Kenitra",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": ["French"],
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": ["Bachelor's degree or equivalent"],
+    "domains": [
+      "Intelligent Systems",
+      "Artificial Intelligence"
+    ],
+    "status": "active",
+    "url": [
+      "https://fs.uit.ac.ma/master-nouvelles-generations/"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": "Listed among 2024-2025 masters."
+  },
+  {
+    "program_id": "uit-master-ia-iot-auto",
+    "name": "Artificial Intelligence and Connected Objects for Automotive",
+    "level": "Master",
+    "degree_type": "Parcours d'Excellence",
+    "host_institution": [
+      "Ibn Tofail University"
+    ],
+    "unit": [
+      "FS of Kenitra"
+    ],
+    "city": "Kenitra",
+    "region": "Rabat-Sale-Kenitra",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": ["French"],
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": ["Bachelor's degree or equivalent"],
+    "domains": [
+      "Artificial Intelligence",
+      "Internet of Things",
+      "Automotive"
+    ],
+    "status": "active",
+    "url": [
+      "https://fs.uit.ac.ma/master-nouvelles-generations/"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": "Listed in the master page under Excellence Automobile."
+  },
+  {
+    "program_id": "uit-est-mus-iiabigdata",
+    "name": "Computer Engineering and Artificial Intelligence for Big Data",
+    "level": "Master",
+    "degree_type": "Specialized Master",
+    "host_institution": [
+      "Ibn Tofail University"
+    ],
+    "unit": [
+      "EST of Kenitra"
+    ],
+    "city": "Kenitra",
+    "region": "Rabat-Sale-Kenitra",
+    "mode": "continuing",
+    "duration_years": 2,
+    "language": ["French"],
+    "tuition": "paid",
+    "tuition_amount_mad": 36000,
+    "admission": ["BAC+3 in computer science; file review and interview"],
+    "domains": [
+      "Computer Engineering",
+      "Artificial Intelligence",
+      "Big Data"
+    ],
+    "status": "active",
+    "url": [
+      "https://est.uit.ac.ma/mus-ingenierie-informatique-et-intelligence-artificielle-pour-le-big-data/"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": "Continuing/specialized university master."
+  },
+  {
+    "program_id": "umi-master-sdia",
+    "name": "Data Science and Artificial Intelligence",
+    "level": "Master",
+    "degree_type": "Master",
+    "host_institution": [
+      "Moulay Ismail University"
+    ],
+    "unit": [
+      "FS of Meknes"
+    ],
+    "city": "Meknes",
+    "region": "Fes-Meknes",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": ["French"],
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Bachelor's degree or equivalent",
+    "domains": [
+      "Data Science",
+      "Artificial Intelligence",
+      "Data Analysis"
+    ],
+    "status": "active",
+    "url": [
+      "https://www.fs-umi.ac.ma/index.php/master-parcours-dexcellence/master-parcours-dexcellence-sciences-des-donnees-et-intelligence-artificielle/"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": "Master/parcours d'excellence in data science and AI."
+  },
+  {
+    "program_id": "umi-master-iaro",
+    "name": "Artificial Intelligence and Operations Research",
+    "level": "Master",
+    "degree_type": "Master",
+    "host_institution": [
+      "Moulay Ismail University"
+    ],
+    "unit": [
+      "FS of Meknes"
+    ],
+    "city": "Meknes",
+    "region": "Fes-Meknes",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Bachelor's degree or equivalent",
+    "domains": [
+      "Artificial Intelligence",
+      "Operational Research",
+      "Optimization"
+    ],
+    "status": "active",
+    "url": [
+      "https://www.fs-umi.ac.ma/index.php/master-intelligence-artificielle-recherche-operationnelle/"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "umi-master-sie",
+    "name": "Intelligent Systems for Education",
+    "level": "Master",
+    "degree_type": "Master",
+    "host_institution": [
+      "Moulay Ismail University"
+    ],
+    "unit": [
+      "ENS of Meknes"
+    ],
+    "city": "Meknes",
+    "region": "Fes-Meknes",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Bachelor's degree or equivalent",
+    "domains": [
+      "Artificial Intelligence",
+      "Education"
+    ],
+    "status": "active",
+    "url": [
+      "https://formations.umi.ac.ma/formation/PC6uAtbWSF0NWPZdslGsLD6h9JHnIH"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "umi-master-iate",
+    "name": "Artificial Intelligence and Emerging Technologies",
+    "level": "Master",
+    "degree_type": "Master",
+    "host_institution": [
+      "Moulay Ismail University"
+    ],
+    "unit": ["EST of Meknes"],
+    "city": "Meknes",
+    "region": "Fes-Meknes",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Bachelor's degree or equivalent",
+    "domains": [
+      "Artificial Intelligence",
+      "IoT",
+      "Cloud",
+      "Networks",
+      "Big Data"
+    ],
+    "status": "active",
+    "url": [
+      "https://formations.umi.ac.ma/formation/FILIERE7D7CEI0OKFR8M4OGWN83V7998CM36KXVJHH3WWP8G7E3DBIZUC"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "uiz-master-bdia",
+    "name": "Big Data and Artificial Intelligence",
+    "level": "Master",
+    "degree_type": "Master",
+    "host_institution": [
+      "Ibn Zohr University"
+    ],
+    "unit": [
+      "FP of Taroudant"
+    ],
+    "city": "Taroudant",
+    "region": "Souss-Massa",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Bachelor's degree or equivalent",
+    "domains": [
+      "Big Data",
+      "Artificial Intelligence",
+      "Machine Learning"
+    ],
+    "status": "active",
+    "url": [
+      "https://www.uiz.ac.ma/node/838"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "uae-fstt-mst-iasd",
+    "name": "Artificial Intelligence and Data Science",
+    "level": "Master",
+    "degree_type": "Master en Sciences et Techniques",
+    "host_institution": [
+      "Abdelmalek Essaadi University"
+    ],
+    "unit": [
+      "FST of Tangier"
+    ],
+    "city": "Tangier",
+    "region": "Tangier-Tetouan-Al Hoceima",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Bachelor's degree or equivalent",
+    "domains": [
+      "Artificial Intelligence",
+      "Data Science"
+    ],
+    "status": "active",
+    "url": [
+      "https://fstt.uae.ac.ma/mst-intelligence-artificielle-et-sciences-de-donnees/"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "uae-fstt-mst-mobiquite-bigdata",
+    "name": "Mobiquity and Big Data",
+    "level": "Master",
+    "degree_type": "Master en Sciences et Techniques",
+    "host_institution": [
+      "Abdelmalek Essaadi University"
+    ],
+    "unit": [
+      "FST of Tangier"
+    ],
+    "city": "Tangier",
+    "region": "Tangier-Tetouan-Al Hoceima",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Bachelor's degree or equivalent",
+    "domains": [
+      "Artificial Intelligence",
+      "Mobile Computing",
+      "Big Data"
+    ],
+    "status": "active",
+    "url": [
+      "https://fstt.uae.ac.ma/cycle-master/"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "uae-fstt-mst-mmsd",
+    "name": "Mathematical Modeling and Data Science",
+    "level": "Master",
+    "degree_type": "Master en Sciences et Techniques",
+    "host_institution": [
+      "Abdelmalek Essaadi University"
+    ],
+    "unit": [
+      "FST of Tangier"
+    ],
+    "city": "Tangier",
+    "region": "Tangier-Tetouan-Al Hoceima",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Bachelor's degree or equivalent",
+    "domains": [
+      "Artificial Intelligence",
+      "Mathematical Modeling",
+      "Data Science"
+    ],
+    "status": "active",
+    "url": [
+      "https://fstt.uae.ac.ma/cycle-master/"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "uae-fstt-mst-sit-bigdata",
+    "name": "IT Security and Big Data",
+    "level": "Master",
+    "degree_type": "Master en Sciences et Techniques",
+    "host_institution": [
+      "Abdelmalek Essaadi University"
+    ],
+    "unit": [
+      "FST of Tangier"
+    ],
+    "city": "Tangier",
+    "region": "Tangier-Tetouan-Al Hoceima",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Bachelor's degree or equivalent",
+    "domains": [
+      "IT Security",
+      "Big Data"
+    ],
+    "status": "active",
+    "url": [
+      "https://fstt.uae.ac.ma/cycle-master/"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "uae-ens-science-donnees",
+    "name": "Data Science",
+    "level": "Master",
+    "degree_type": "Specialized Master",
+    "host_institution": [
+      "Abdelmalek Essaadi University"
+    ],
+    "unit": [
+      "ENS of Tetouan"
+    ],
+    "city": "Tetouan",
+    "region": "Tangier-Tetouan-Al Hoceima",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Bachelor's degree or equivalent",
+    "domains": [
+      "Artificial Intelligence",
+      "Data Science",
+      "Statistics",
+      "Applied Mathematics"
+    ],
+    "status": "active",
+    "url": [
+      "https://www.uae.ac.ma/formations/ens/science-des-donnees"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "uae-fstt-statistique-donnees",
+    "name": "Statistics and Data Science",
+    "level": "Master",
+    "degree_type": "Master",
+    "host_institution": [
+      "Abdelmalek Essaadi University"
+    ],
+    "unit": [
+      "FST of Tangier"
+    ],
+    "city": "Tangier",
+    "region": "Tangier-Tetouan-Al Hoceima",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Bachelor's degree or equivalent",
+    "domains": [
+      "Artificial Intelligence",
+      "Statistics",
+      "Data Science"
+    ],
+    "status": "active",
+    "url": [
+      "https://www.uae.ac.ma/formations/fstt/statistique-et-sciences-des-donnees"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "usmba-fsdm-bdsi",
+    "name": "Big Data and Intelligent Systems (BDSI)",
+    "level": "Master",
+    "degree_type": "Master",
+    "host_institution": [
+      "Sidi Mohamed Ben Abdellah University"
+    ],
+    "unit": [
+      "FS of Fez"
+    ],
+    "city": "Fez",
+    "region": "Fes-Meknes",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Bachelor's degree or equivalent",
+    "domains": [
+      "Artificial Intelligence",
+      "Big Data",
+      "Intelligent Systems"
+    ],
+    "status": "active",
+    "url": [
+      "https://www.fsdm.usmba.ac.ma/Docs/Candidature/26-27/BDSI.pdf"
+    ],
+    "last_checked": "2026-09-01",
+    "notes": null
+  },
+  {
+    "program_id": "usmba-fsdm-biam",
+    "name": "Bioinformatics & Artificial Intelligence for Precision Medicine",
+    "level": "Master",
+    "degree_type": "Research Master",
+    "host_institution": [
+      "Sidi Mohamed Ben Abdellah University"
+    ],
+    "unit": [
+      "FS of Fez"
+    ],
+    "city": "Fez",
+    "region": "Fes-Meknes",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "French/English",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Bachelor's degree or equivalent",
+    "domains": [
+      "Artificial Intelligence",
+      "Bioinformatics",
+      "AI",
+      "Big Data",
+      "Precision Medicine",
+      "CyberBioSecurity"
+    ],
+    "status": "active",
+    "url": [
+      "https://www.fsdm.usmba.ac.ma/Docs/Candidature/26-27/BIAM.pdf"
+    ],
+    "last_checked": "2026-09-01",
+    "notes": null
+  },
+  {
+    "program_id": "usmba-fsdm-mlaim",
+    "name": "Advanced Machine Learning and Multimedia Intelligence",
+    "level": "Master",
+    "degree_type": "Master",
+    "host_institution": [
+      "Sidi Mohamed Ben Abdellah University"
+    ],
+    "unit": [
+      "FS of Fez"
+    ],
+    "city": "Fez",
+    "region": "Fes-Meknes",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Licence in computer science or equivalent",
+    "domains": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Deep Learning",
+      "Multimedia Intelligence"
+    ],
+    "status": "active",
+    "url": [
+      "https://www.fsdm.usmba.ac.ma/Docs/Candidature/26-27/MLAIM.pdf"
+    ],
+    "last_checked": "2026-09-01",
+    "notes": null
+  },
+  {
+    "program_id": "usmba-fsdm-wisd",
+    "name": "Web Intelligence and Data Science",
+    "level": "Master",
+    "degree_type": "Research Master",
+    "host_institution": [
+      "Sidi Mohamed Ben Abdellah University"
+    ],
+    "unit": [
+      "FS of Fez"
+    ],
+    "city": "Fez",
+    "region": "Fes-Meknes",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Bachelor's degree or equivalent",
+    "domains": [
+      "Web Intelligence",
+      "Data Science",
+      "Artificial Intelligence"
+    ],
+    "status": "active",
+    "url": [
+      "https://www.fsdm.usmba.ac.ma/Docs/Candidature/26-27/WISD.pdf"
+    ],
+    "last_checked": "2026-09-01",
+    "notes": null
+  },
+  {
+    "program_id": "usmba-fst-sdsi",
+    "name": "Data Science and Intelligent Systems (SDSI)",
+    "level": "Master",
+    "degree_type": "Master en Sciences et Techniques",
+    "host_institution": [
+      "Sidi Mohamed Ben Abdellah University"
+    ],
+    "unit": [
+      "FST of Fez"
+    ],
+    "city": "Fez",
+    "region": "Fes-Meknes",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Bachelor's degree or equivalent",
+    "domains": [
+      "Artificial Intelligence",
+      "Data Science",
+      "Intelligent Systems",
+      "Software/Data Engineering"
+    ],
+    "status": "active",
+    "url": [
+      "https://fst-usmba.ac.ma/framework/uploads/2021/12/MST-SDSI.pdf"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "usmba-ensaf-isdia",
+    "name": "Data Science and Artificial Intelligence Engineering",
+    "level": "Engineer",
+    "degree_type": "State Engineering Degree",
+    "host_institution": [
+      "Sidi Mohamed Ben Abdellah University"
+    ],
+    "unit": [
+      "ENSA of Fes"
+    ],
+    "city": "Fez",
+    "region": "Fes-Meknes",
+    "mode": "in_person",
+    "duration_years": 3,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Engineering admission",
+    "domains": [
+      "Data Science",
+      "Artificial Intelligence",
+      "Big Data"
+    ],
+    "status": "active",
+    "url": [
+      "https://ensaf.ac.ma/fil-isdia.php"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "usmba-ensaf-3iacn",
+    "name": "Computer Engineering, Artificial Intelligence and Digital Trust",
+    "level": "Engineer",
+    "degree_type": "State Engineering Degree",
+    "host_institution": [
+      "Sidi Mohamed Ben Abdellah University"
+    ],
+    "unit": [
+      "ENSA of Fes"
+    ],
+    "city": "Fez",
+    "region": "Fes-Meknes",
+    "mode": "in_person",
+    "duration_years": 3,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Engineering admission",
+    "domains": [
+      "Computer Engineering",
+      "Artificial Intelligence",
+      "Cybersecurity"
+    ],
+    "status": "active",
+    "url": [
+      "https://ensaf.ac.ma/fil-3iacn.php"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "usmba-ensaf-ilia",
+    "name": "Software Engineering and Artificial Intelligence",
+    "level": "Engineer",
+    "degree_type": "State Engineering Degree",
+    "host_institution": [
+      "Sidi Mohamed Ben Abdellah University"
+    ],
+    "unit": [
+      "ENSA of Fes"
+    ],
+    "city": "Fez",
+    "region": "Fes-Meknes",
+    "mode": "in_person",
+    "duration_years": 3,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Engineering admission",
+    "domains": [
+      "Software Engineering",
+      "Artificial Intelligence"
+    ],
+    "status": "active",
+    "url": [
+      "https://ensaf.ac.ma/fil-ilia.php"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "uir-master-ai",
+    "name": "Master AI",
+    "level": "Master",
+    "degree_type": "Master",
+    "host_institution": [
+      "International University of Rabat"
+    ],
+    "unit": [
+      "School of Computer Science and Digital Engineering"
+    ],
+    "city": "Rabat",
+    "region": "Rabat-Sale-Kenitra",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "English/French",
+    "tuition": "private",
+    "tuition_amount_mad": null,
+    "admission": "Admission file/requirements",
+    "domains": [
+      "Machine Learning",
+      "Computer Vision",
+      "Natural Language Processing",
+      "Robotics"
+    ],
+    "status": "active",
+    "url": [
+      "https://www.uir.ac.ma/en/pole/school-of-computer-science-and-digital-engineering/Master-AI"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "uir-exec-bigdata-ai",
+    "name": "Big Data and Artificial Intelligence",
+    "level": "Master",
+    "degree_type": "Executive Master",
+    "host_institution": [
+      "International University of Rabat"
+    ],
+    "unit": [
+      "College of Engineering & Architecture"
+    ],
+    "city": "Rabat",
+    "region": "Rabat-Sale-Kenitra",
+    "mode": "executive",
+    "duration_years": null,
+    "language": "French",
+    "tuition": "private",
+    "tuition_amount_mad": null,
+    "admission": "Professional profile",
+    "domains": [
+      "Big Data",
+      "Artificial Intelligence",
+      "Data Science",
+      "Data Engineering"
+    ],
+    "status": "active",
+    "url": [
+      "https://www.uir.ac.ma/fr/pole/College-of-Engineering-et-Architecture/executive-master-big-data-et-intelligence-artificielle"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "uir-master-business-analytics",
+    "name": "Business Analytics",
+    "level": "Master",
+    "degree_type": "Master",
+    "host_institution": [
+      "International University of Rabat"
+    ],
+    "unit": [
+      "Rabat Business School"
+    ],
+    "city": "Rabat",
+    "region": "Rabat-Sale-Kenitra",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "English/French",
+    "tuition": "private",
+    "tuition_amount_mad": null,
+    "admission": "Admission file/requirements",
+    "domains": [
+      "Business Analytics",
+      "Data Science"
+    ],
+    "status": "active",
+    "url": [
+      "https://rbs.uir.ac.ma/master-in-business-analytics/"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "um6p-executive-master-ai",
+    "name": "Artificial Intelligence",
+    "level": "Master",
+    "degree_type": "Executive Master",
+    "host_institution": [
+      "Mohammed VI Polytechnic University"
+    ],
+    "unit": [
+      "College of Computing"
+    ],
+    "city": "Rabat / Benguerir",
+    "region": "Multiple regions",
+    "mode": "executive",
+    "duration_years": 1.0,
+    "language": "English/French",
+    "tuition": "private",
+    "tuition_amount_mad": null,
+    "admission": "Professional profile",
+    "domains": [
+      "Artificial Intelligence",
+      "Data Science",
+      "Big Data",
+      "Data Engineering"
+    ],
+    "status": "active",
+    "url": [
+      "https://cc.um6p.ma/executive-master-in-ai"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "um6p-cc-phd",
+    "name": "PhD Program",
+    "level": "PhD",
+    "degree_type": "PhD",
+    "host_institution": [
+      "Mohammed VI Polytechnic University"
+    ],
+    "unit": [
+      "College of Computing"
+    ],
+    "city": "Rabat / Benguerir",
+    "region": "Multiple regions",
+    "mode": "research",
+    "duration_years": 3,
+    "language": "English",
+    "tuition": "fellowship",
+    "tuition_amount_mad": null,
+    "admission": "Master or equivalent",
+    "domains": [
+      "Computer Science",
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Cybersecurity"
+    ],
+    "status": "active",
+    "url": [
+      "https://cc.um6p.ma/phd-program"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "um6p-cedoc",
+    "name": "UM6P CEDoc Doctoral Applications",
+    "level": "PhD",
+    "degree_type": "PhD",
+    "host_institution": [
+      "Mohammed VI Polytechnic University"
+    ],
+    "unit": [
+      "CEDoc"
+    ],
+    "city": "Benguerir",
+    "region": "Marrakesh-Safi",
+    "mode": "research",
+    "duration_years": 3,
+    "language": "English/French",
+    "tuition": "fellowship",
+    "tuition_amount_mad": null,
+    "admission": "Master or equivalent",
+    "domains": [
+      "Multidisciplinary research",
+      "AI-related calls"
+    ],
+    "status": "active",
+    "url": [
+      "https://cedoc.um6p.ma/applications"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "aui-ms-bda",
+    "name": "Master of Science in Big Data Analytics",
+    "level": "Master",
+    "degree_type": "Master of Science",
+    "host_institution": [
+      "Al Akhawayn University"
+    ],
+    "unit": [
+      "School of Science and Engineering"
+    ],
+    "city": "Ifrane",
+    "region": "Fes-Meknes",
+    "mode": "in_person",
+    "duration_years": null,
+    "language": "English",
+    "tuition": "private",
+    "tuition_amount_mad": null,
+    "admission": "Admission file/requirements",
+    "domains": [
+      "Big Data",
+      "Data Mining",
+      "Data Analytics",
+      "Data Management",
+      "Statistics"
+    ],
+    "status": "active",
+    "url": [
+      "https://aui.ma/master-of-science-in-big-data-analytics"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "aui-bs-air",
+    "name": "Bachelor of Science in Artificial Intelligence and Robotization",
+    "level": "Bachelor",
+    "degree_type": "Bachelor of Science",
+    "host_institution": [
+      "Al Akhawayn University"
+    ],
+    "unit": [
+      "School of Science and Engineering"
+    ],
+    "city": "Ifrane",
+    "region": "Fes-Meknes",
+    "mode": "in_person",
+    "duration_years": 4,
+    "language": "English",
+    "tuition": "private",
+    "tuition_amount_mad": null,
+    "admission": "High-school graduates",
+    "domains": [
+      "Artificial Intelligence",
+      "Robotics"
+    ],
+    "status": "active",
+    "url": [
+      "https://aui.ma/bachelor-of-science-in-artificial-intelligence-and-robotization"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "upf-master-iads",
+    "name": " Artificial Intelligence and Data Science",
+    "level": "Master",
+    "degree_type": "Master",
+    "host_institution": [
+      "Private University of Fez"
+    ],
+    "unit": [
+      "FSI"
+    ],
+    "city": "Fez",
+    "region": "Fes-Meknes",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "French",
+    "tuition": "private",
+    "tuition_amount_mad": null,
+    "admission": "Admission file/requirements",
+    "domains": [
+      "Artificial Intelligence",
+      "Data Science"
+    ],
+    "status": "active",
+    "url": [
+      "https://www.upf.ac.ma/etab_fsi_form_datascience.aspx"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "mundiapolis-master-dsia",
+    "name": "Data Science and Artificial Intelligence",
+    "level": "Master",
+    "degree_type": "Master",
+    "host_institution": [
+      "Mundiapolis University"
+    ],
+    "unit": [
+      "Pole Ingenierie"
+    ],
+    "city": "Casablanca",
+    "region": "Casablanca-Settat",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "French",
+    "tuition": "private",
+    "tuition_amount_mad": null,
+    "admission": "Admission file/requirements",
+    "domains": [
+      "Data Science",
+      "Artificial Intelligence",
+      "Data Analytics"
+    ],
+    "status": "active",
+    "url": [
+      "https://www.mundiapolis.ma/ecole-ingenierie/master-data-science-et-intelligence-artificielle"
+    ],
+    "last_checked": "2026-06-23",
+     "notes": null
+  },
+  {
+    "program_id": "mundiapolis-phd-stidd",
+    "name": "PhD in Science, Technology, Engineering and Sustainable Development",
+    "level": "PhD",
+    "degree_type": "PhD",
+    "host_institution": [
+      "Mundiapolis University"
+    ],
+    "unit": [
+      "Engineering Department"
+    ],
+    "city": "Casablanca",
+    "region": "Casablanca-Settat",
+    "mode": "research",
+    "duration_years": 3,
+    "language": "French",
+    "tuition": "private",
+    "tuition_amount_mad": null,
+    "admission": "Master or equivalent",
+    "domains": [
+      "Engineering Sciences",
+      "Data Science",
+      "AI-related topics"
+    ],
+    "status": "active",
+    "url": [
+      "https://www.mundiapolis.ma/formations/doctorat-en-sciences-technologie-ingenierie-et-developpement-durable"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "uic-phd-ai-ds",
+    "name": "Engineering Sciences: Artificial Intelligence and Data Science",
+    "level": "PhD",
+    "degree_type": "PhD",
+    "host_institution": [
+      "International University of Casablanca"
+    ],
+    "unit": [
+      "Centre Doctoral"
+    ],
+    "city": "Casablanca",
+    "region": "Casablanca-Settat",
+    "mode": "research",
+    "duration_years": 3,
+    "language": "French",
+    "tuition": "private",
+    "tuition_amount_mad": null,
+    "admission": "Master or equivalent",
+    "domains": [
+      "Artificial Intelligence",
+      "Data Science"
+    ],
+    "status": "active",
+    "url": [
+      "https://uic.ac.ma/centre-doctoral-candidature/"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "uic-engineer-data-bigdata",
+    "name": "Computer Engineering: Data Science and Big Data Option",
+    "level": "Engineer",
+    "degree_type": "Engineer Degree",
+    "host_institution": [
+      "International University of Casablanca"
+    ],
+    "unit": [
+      "Ecole d'Ingenierie"
+    ],
+    "city": "Casablanca",
+    "region": "Casablanca-Settat",
+    "mode": "in_person",
+    "duration_years": 5,
+    "language": "French",
+    "tuition": "private",
+    "tuition_amount_mad": null,
+    "admission": "Admission file/requirements",
+    "domains": [
+      "Computer Engineering",
+      "Data Science",
+      "Big Data"
+    ],
+    "status": "active",
+    "url": [
+      "https://uic.ac.ma/formation/genie-informatique/"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "esisa-master-is2ia",
+    "name": "Information Systems Engineering and Artificial Intelligence",
+    "level": "Master",
+    "degree_type": "Master",
+    "host_institution": [
+      "ESISA"
+    ],
+    "unit": [
+      "ESISA"
+    ],
+    "city": "Fez",
+    "region": "Fes-Meknes",
+    "mode": "alternance",
+    "duration_years": 2,
+    "language": "French",
+    "tuition": "private",
+    "tuition_amount_mad": null,
+    "admission": "Admission file/requirements",
+    "domains": [
+      "Information Systems",
+      "Artificial Intelligence",
+      "Data",
+      "Deep Learning"
+    ],
+    "status": "active",
+    "url": [
+      "https://www.esisa.ac.ma/Bac5IS2IA"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "ehtp-master-iaoi",
+    "name": "Artificial Intelligence of Objects & Innovation",
+    "level": "Master",
+    "degree_type": "Specialized Master",
+    "host_institution": [
+      "EHTP"
+    ],
+    "unit": [
+      "EHTP"
+    ],
+    "city": "Casablanca",
+    "region": "Casablanca-Settat",
+    "mode": "executive",
+    "duration_years": null,
+    "language": "French",
+    "tuition": "private",
+    "tuition_amount_mad": null,
+    "admission": "Admission file/requirements",
+    "domains": [
+      "Artificial Intelligence",
+      "AIoT",
+      "IoT",
+      "Big Data",
+      "Innovation"
+    ],
+    "status": "active",
+    "url": [
+      "https://www.ehtp.ac.ma/en/master-specialise-intelligence-artificielle-des-objets-innovation-2/"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "ehtp-master-data-engineering",
+    "name": "Data Engineering",
+    "level": "Master",
+    "degree_type": "Specialized Master",
+    "host_institution": [
+      "EHTP"
+    ],
+    "unit": [
+      "EHTP"
+    ],
+    "city": "Casablanca",
+    "region": "Casablanca-Settat",
+    "mode": "executive",
+    "duration_years": null,
+    "language": "French",
+    "tuition": "private",
+    "tuition_amount_mad": null,
+    "admission": "Admission file/requirements",
+    "domains": [
+      "Data Engineering",
+      "Big Data"
+    ],
+    "status": "active",
+    "url": [
+      "https://www.ehtp.ac.ma/executive-master-data-engineering/"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "insea-engineer-data-science",
+    "name": "Data Science Track",
+    "level": "Engineer",
+    "degree_type": "State Engineering Degree",
+    "host_institution": [
+      "INSEA"
+    ],
+    "unit": [
+      "INSEA"
+    ],
+    "city": "Rabat",
+    "region": "Rabat-Sale-Kenitra",
+    "mode": "in_person",
+    "duration_years": 3,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Engineering admission",
+    "domains": [
+      "Artificial Intelligence",
+      "Data Science",
+      "Machine Learning",
+      "Big Data",
+      "Statistics"
+    ],
+    "status": "active",
+    "url": [
+      "https://insea.ac.ma/index.php/programme/formation/com-jumi-menu/53-formation"
+    ],
+    "last_checked": "2026-06-23",
+     "notes": null
+  },
+  {
+    "program_id": "insea-master-m2si",
+    "name": "Information Systems and Intelligent Systems (M2SI)",
+    "level": "Master",
+    "degree_type": "Research Master",
+    "host_institution": [
+      "INSEA"
+    ],
+    "unit": [
+      "INSEA"
+    ],
+    "city": "Rabat",
+    "region": "Rabat-Sale-Kenitra",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Bachelor's degree or equivalent",
+    "domains": [
+      "Systems Information",
+      "Intelligent Systems",
+      "Artificial Intelligence"
+    ],
+    "status": "active",
+    "url": [
+      "https://insea.ac.ma/index.php/appel-a-candidatures-pour-le-cycle-du-doctorat-a-l-insea-2025-2026"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "insea-phd-si2m",
+    "name": "PhD in Information Systems and Intelligent Systems",
+    "level": "PhD",
+    "degree_type": "PhD",
+    "host_institution": [
+      "INSEA"
+    ],
+    "unit": [
+      "INSEA"
+    ],
+    "city": "Rabat",
+    "region": "Rabat-Sale-Kenitra",
+    "mode": "research",
+    "duration_years": 3,
+    "language": "French/English",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Master or engineering degree",
+    "domains": [
+      "Information Systems",
+      "Intelligent Systems",
+      "AI",
+      "Applied Mathematics"
+    ],
+    "status": "active",
+    "url": [
+      "https://insea.ac.ma/index.php/appel-a-candidatures-pour-le-cycle-du-doctorat-a-l-insea-2025-2026"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": null
+  },
+  {
+    "program_id": "iav-phd-ai-agriculture",
+    "name": "CEDoc PhD - Artificial Intelligence, Modeling and Digital Technology for Sustainable Agriculture",
+    "level": "PhD",
+    "degree_type": "PhD",
+    "host_institution": [
+      "IAV Hassan II"
+    ],
+    "unit": [
+      "IAV Hassan II"
+    ],
+    "city": "Rabat",
+    "region": "Rabat-Sale-Kenitra",
+    "mode": "research",
+    "duration_years": 3,
+    "language": "French/English",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Master or equivalent",
+    "domains": [
+      "Artificial Intelligence",
+      "Modeling",
+      "Digital Agriculture",
+      "Precision Agriculture",
+      "Remote Sensing",
+      "Climate Resilience"
+    ],
+    "status": "active",
+    "url": [
+      "https://iav.ac.ma/fr/inscription-au-cedoc"
+    ],
+    "last_checked": "2026-06-23",
+    "notes": "Doctoral call axis for AI, modeling and digital tools in sustainable agriculture."
+  },
+  {
+    "program_id": "ensam-casa-phd",
+    "name": "Doctoral Training",
+    "level": "PhD",
+    "degree_type": "PhD",
+    "host_institution": [
+      "Hassan II University"
+    ],
+    "unit": [
+      "ENSAM of Casablanca"
+    ],
+    "city": "Casablanca",
+    "region": "Casablanca-Settat",
+    "mode": "research",
+    "duration_years": 3,
+    "language": "French",
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": "Master or equivalent",
+    "domains": [
+      "Industrial Engineering",
+      "Artificial Intelligence",
+      "Modeling",
+      "Systems"
+    ],
+    "status": "active",
+    "url": [
+      "https://www.ensam-casa.ma/pages/details?id=7"
+    ],
+    "last_checked": "2026-06-23",
     "notes": null
   }
 ]
