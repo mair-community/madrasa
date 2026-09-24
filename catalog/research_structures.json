@@ -712,5 +712,23 @@
     "url": ["https://www.esisa.ac.ma/esisa-analytica"],
     "last_checked": "2026-07-31",
     "notes": null
+  },
+  {
+    "structure_id": "usmba-fst-fes-lsia",
+    "name": "Intelligent Systems and Applications Laboratory",
+    "type": "Laboratory",
+    "host_institution": ["Sidi Mohamed Ben Abdellah University"],
+    "unit": [
+      "FST Fes"
+  ],
+    "city": "Fes",
+    "region": "Fes-Meknes",
+    "domains": ["AI", "Data Science", "Machine Learning", "Natural Language Processing", "Image Processing and Analysis", "Big Data", "HPC", "Embedded Systems and Coding Theory", "Knowledge Management", "Network Security", "Ad hoc Networks", "E-health", "Data Warehousing", "Data Mining and Decision Support"],
+    "status": "active",
+    "url": [
+      "https://fst-usmba.ac.ma/laboratoire_sia/"
+    ],
+    "last_checked": "2026-09-20",
+    "notes": null
   }
 ]

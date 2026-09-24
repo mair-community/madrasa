@@ -156,5 +156,49 @@
     ],
     "last_checked": "2026-06-23",
     "notes": null
+  },
+  {
+    "program_id": "usmba-fst-fes-sdsi",
+    "name": "Data Science and Intelligent Systems",
+    "level": "Master",
+    "degree_type": "Master",
+    "host_institution": [
+      "Sidi Mohamed Ben Abdellah University"
+    ],
+    "unit": [
+      "FST Fes"
+    ],
+    "city": "Fes",
+    "region": "Fes-Meknes",
+    "mode": "in_person",
+    "duration_years": 2,
+    "language": [
+      "French"
+    ],
+    "tuition": "public",
+    "tuition_amount_mad": null,
+    "admission": [
+      "Entrance Exam"
+    ],
+    "domains": [
+      "Data Science",
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Deep Learning",
+      "Natural Language Processing",
+      "Computer Vision",
+      "Audio Processing",
+      "Big Data",
+      "Data Engineering",
+      "Virtualization",
+      "Cloud Computing",
+      "Networks"
+    ],
+    "status": "active",
+    "url": [
+      "https://fst-usmba.ac.ma/framework/uploads/2026/06/Fiche_MST_SDSI.pdf"
+    ],
+    "last_checked": "2026-09-20",
+    "notes": null
   }
 ]
