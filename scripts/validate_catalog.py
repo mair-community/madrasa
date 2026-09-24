@@ -86,9 +86,9 @@ VALID_TUITION = {
 VALID_STATUS = {"active", "likely_active", "unknown", "inactive", "nonactive"}
 
 VALID_REGIONS = {
-    "Tanger-Tetouan-Al Hoceima",
+    "Tangier-Tetouan-Al Hoceima",
     "Oriental",
-    "Fes-Meknes",
+    "Fez-Meknes",
     "Rabat-Sale-Kenitra",
     "Beni Mellal-Khenifra",
     "Casablanca-Settat",
