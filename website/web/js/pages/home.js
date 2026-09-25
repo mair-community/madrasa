@@ -191,7 +191,7 @@ function recentSection(catalog) {
 }
 
 function institutionsSection(catalog) {
-  const top = catalog.institutions.slice(0, 8);
+  const top = catalog.institutions.slice(0, 9);
   const grid = el('div.grid.grid--2', null, top.map(institutionTile));
   revealAll(grid.children, 40);
 
@@ -208,7 +208,8 @@ function institutionsSection(catalog) {
 }
 
 function geographySection(catalog) {
-  const regions = catalog.facets.region.filter((row) => row.count > 0);
+  const regions = catalog.facets.region.filter((row) => row.count > 0)
+    .sort((a, b) => b.count - a.count || a.value.localeCompare(b.value));
   const cities = catalog.facets.city.slice(0, 10);
 
   return el('section.section', null,

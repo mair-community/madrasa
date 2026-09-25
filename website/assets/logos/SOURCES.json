@@ -27,6 +27,21 @@
     "source": "https://www.ucd.ac.ma/wp-content/uploads/2025/02/logo-png-1.png",
     "width": 152
   },
+  "EHTP": {
+    "file": "ehtp.png",
+    "height": 111,
+    "retrieved": "2026-09-24",
+    "source": "https://www.ehtp.ac.ma/wp-content/uploads/2022/03/logo2@2x-600x139.png",
+    "width": 480
+  },
+  "ESISA": {
+    "alias_of": "Higher School of Engineering in Applied Sciences",
+    "file": "esisa.png",
+    "height": 88,
+    "retrieved": "2026-08-23",
+    "source": "https://esisa.ac.ma/images/logo/logo1.png",
+    "width": 161
+  },
   "Euromed University of Fes": {
     "file": "uemf.png",
     "height": 88,
@@ -40,6 +55,14 @@
     "retrieved": "2026-08-23",
     "source": "https://www.uh1.ac.ma/wp-content/uploads/2021/04/loogo.png",
     "width": 227
+  },
+  "Hassan II University": {
+    "alias_of": "Hassan II University of Casablanca",
+    "file": "uh2c.png",
+    "height": 88,
+    "retrieved": "2026-08-23",
+    "source": "https://www.univh2c.ma/sites/default/files/uh2c_logo_blue.png",
+    "width": 104
   },
   "Hassan II University of Casablanca": {
     "file": "uh2c.png",
@@ -55,12 +78,41 @@
     "source": "https://esisa.ac.ma/images/logo/logo1.png",
     "width": 161
   },
+  "IAV Hassan II": {
+    "file": "iav.png",
+    "height": 115,
+    "retrieved": "2026-09-24",
+    "source": "https://iav.ac.ma/themes/highsta/images/logo_iav2.png",
+    "width": 480
+  },
+  "INSEA": {
+    "alias_of": "National Institute of Statistics and Applied Economics",
+    "file": "insea.png",
+    "height": 88,
+    "retrieved": "2026-08-23",
+    "source": "https://www.insea.ac.ma/images/insea/logo.png",
+    "width": 78
+  },
   "Ibn Tofail University": {
     "file": "uit.png",
     "height": 88,
     "retrieved": "2026-08-23",
     "source": "https://www.uit.ac.ma/wp-content/uploads/2026/07/LOGO-UIT-TRANSPARANT1.png",
     "width": 84
+  },
+  "Ibn Zohr University": {
+    "file": "uiz.png",
+    "height": 60,
+    "retrieved": "2026-09-24",
+    "source": "https://www.uiz.ac.ma/fr/sites/default/files/logo.png",
+    "width": 213
+  },
+  "International University of Casablanca": {
+    "file": "uic.png",
+    "height": 123,
+    "retrieved": "2026-09-24",
+    "source": "https://uic.ac.ma/wp-content/uploads/2022/12/New-Logo-UIC-H-768x202.jpg",
+    "width": 480
   },
   "International University of Rabat": {
     "file": "uir.png",
@@ -90,6 +142,20 @@
     "source": "https://um6p.ma/images/logos/logo.png",
     "width": 240
   },
+  "Moulay Ismail University": {
+    "file": "umi.png",
+    "height": 176,
+    "retrieved": "2026-09-24",
+    "source": "https://www.umi.ac.ma/wp-content/uploads/2025/03/cropped-cropped-logo-umi-amazigh.webp",
+    "width": 287
+  },
+  "Mundiapolis University": {
+    "file": "mundiapolis.png",
+    "height": 60,
+    "retrieved": "2026-09-24",
+    "source": "https://www.mundiapolis.ma/sites/default/files/images/header/logo-25-coleur.png",
+    "width": 220
+  },
   "National Higher School of Mines of Rabat": {
     "file": "ensmr.png",
     "height": 56,
@@ -110,6 +176,13 @@
     "retrieved": "2026-08-23",
     "source": "https://www.insea.ac.ma/images/insea/logo.png",
     "width": 78
+  },
+  "Private University of Fez": {
+    "file": "upf.png",
+    "height": 60,
+    "retrieved": "2026-09-24",
+    "source": "https://www.upf.ac.ma/images/logo_upf.png",
+    "width": 124
   },
   "Sidi Mohamed Ben Abdellah University": {
     "file": "usmba.png",

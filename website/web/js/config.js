@@ -77,11 +77,21 @@ export const INSTITUTION_SHORT = {
 };
 
 /**
- * Official institution logos, harvested from each institution's own site by
- * `scripts/fetch_logos.py`. Provenance for every file is in assets/logos/SOURCES.json.
+ * Official institution logos from each institution's own website.
+ * Provenance for every file is in assets/logos/SOURCES.json.
  * Missing entries fall back to the lettermark, so this map can stay partial.
  */
 export const INSTITUTION_LOGO = {
+  "Moulay Ismail University": {"file": "umi.png", "w": 287, "h": 176},
+  "EHTP": {"file": "ehtp.png", "w": 480, "h": 111},
+  "International University of Casablanca": {"file": "uic.png", "w": 480, "h": 123},
+  "Mundiapolis University": {"file": "mundiapolis.png", "w": 220, "h": 60},
+  "IAV Hassan II": {"file": "iav.png", "w": 480, "h": 115},
+  "Ibn Zohr University": {"file": "uiz.png", "w": 213, "h": 60},
+  "Private University of Fez": {"file": "upf.png", "w": 124, "h": 60},
+  "INSEA": {"file": "insea.png", "w": 78, "h": 88},
+  "ESISA": {"file": "esisa.png", "w": 161, "h": 88},
+  "Hassan II University": {"file": "uh2c.png", "w": 104, "h": 88},
   "Abdelmalek Essaadi University": { file: "uae.png", w: 240, h: 70 },
   "Al Akhawayn University": { file: "aui.png", w: 135, h: 88 },
   "Cadi Ayyad University": { file: "uca.png", w: 69, h: 88 },
@@ -135,6 +145,7 @@ export const REGION_ORDER = [
   'Tanger-Tetouan-Al Hoceima',
   'Oriental',
   'Fes-Meknes',
+  'Fez-Meknes',
   'Rabat-Sale-Kenitra',
   'Beni Mellal-Khenifra',
   'Casablanca-Settat',

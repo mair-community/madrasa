@@ -105,7 +105,8 @@ function tally(entries, pick) {
 function sortedCounts(counts, { order = null } = {}) {
   const rows = [...counts].map(([value, count]) => ({ value, count }));
   if (order) {
-    rows.sort((a, b) => order.indexOf(a.value) - order.indexOf(b.value));
+    const rank = (value) => order.includes(value) ? order.indexOf(value) : order.length;
+    rows.sort((a, b) => rank(a.value) - rank(b.value) || a.value.localeCompare(b.value));
   } else {
     rows.sort((a, b) => b.count - a.count || a.value.localeCompare(b.value));
   }
